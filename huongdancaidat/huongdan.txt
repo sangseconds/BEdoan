@@ -1,0 +1,9 @@
+luu y chuong trinh chay tren may ubuntu
+
+1. cai dat aminer ho tro phat hien bat thuong cho du lieu log
+    chay file aminer_install.sh (chmod +x)
+2. cai dat cac thu vien lien quan trong python
+    fastAPI
+    uvicorn
+N. chay lenh khoi dong backend
+    VD: /home/trung/.local/bin/uvicorn main:app --reload
