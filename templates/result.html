@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Phân Tích Log</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kết Quả Phân Tích Log</h1>
+        {% if results %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Dòng Bất Thường</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    {{ result|safe }}
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <p>Không có dòng bất thường nào được tìm thấy.</p>
+        {% endif %}
+        <form action="/upload" enctype="multipart/form-data" method="post">
+            <label for="file">Chọn file log mới:</label>
+            <input name="file" type="file" required>
+            <input type="submit" value="Tải lên và phân tích">
+        </form>
+        <a href="/">Quay lại trang chính</a>
+    </div>
+</body>
+</html>

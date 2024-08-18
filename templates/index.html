@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Log Analyzer</h1>
+        <form action="/upload" enctype="multipart/form-data" method="post">
+            <label for="file">Chọn file log:</label>
+            <input name="file" type="file" required>
+            <input type="submit" value="Tải lên và phân tích">
+        </form>
+    </div>
+</body>
+</html>
