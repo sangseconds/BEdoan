@@ -12,7 +12,7 @@ import time
 
 app = FastAPI()
 
-# Cài đặt đường dẫn tới templates và static files
+# Cài đặt đường dẫn tới templates và static  files
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
