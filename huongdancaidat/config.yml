@@ -5,6 +5,7 @@ Log.StatisticsLevel: 1
 Log.DebugLevel: 2
 
 LogResourceList:
+  - file:///home/trung/Desktop/sang/testanomalyLogdataSuccessfull/test.log
          
 
 Parser:
