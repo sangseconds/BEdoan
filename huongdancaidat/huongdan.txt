@@ -2,6 +2,11 @@ luu y chuong trinh chay tren may ubuntu
 
 1. cai dat aminer ho tro phat hien bat thuong cho du lieu log
     chay file aminer_install.sh (chmod +x)
+    train mo hinh du lieu bang file train.log thong qua file config.yml mau :
+    Learnmode:True
+    LogResource: duong dan train.log
+    chay lenh sudo aminer -c {path} voi path = config.tml mau
+    sau do sua Learnmode:False va xoa duong dan train.log trong file
 2. cai dat cac thu vien lien quan trong python
     fastAPI
     uvicorn
