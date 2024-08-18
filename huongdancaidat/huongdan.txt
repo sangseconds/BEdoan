@@ -5,7 +5,7 @@ luu y chuong trinh chay tren may ubuntu
     train mo hinh du lieu bang file train.log thong qua file config.yml mau :
     Learnmode:True
     LogResource: duong dan train.log
-    chay lenh sudo aminer -c {path} voi path = config.tml mau
+    chay lenh sudo aminer -c {path} voi path = config.yml mau
     sau do sua Learnmode:False va xoa duong dan train.log trong file
 2. cai dat cac thu vien lien quan trong python
     fastAPI
