@@ -17,7 +17,7 @@ templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Đường dẫn tới file config mẫu
-TEMPLATE_CONFIG_PATH = "/etc/aminer/config.yml"
+TEMPLATE_CONFIG_PATH = "../testanomalyLogdataSuccessfull/huongdancaidat/config.yml"
 
 # Đường dẫn tới file lưu trữ giá trị của `i`
 COUNTER_FILE = "counter.txt"
