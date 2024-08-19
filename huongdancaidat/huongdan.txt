@@ -7,8 +7,15 @@ luu y chuong trinh chay tren may ubuntu
     LogResource: duong dan train.log
     chay lenh sudo aminer -c {path} voi path = config.yml mau
     sau do sua Learnmode:False va xoa duong dan train.log trong file
-2. cai dat cac thu vien lien quan trong python
+2. cai dat cac thu vien lien quan trong python (sudo)
     fastAPI
     uvicorn
+3. cai dat poetry
+    sudo curl -sSL https://install.python-poetry.org | python3 -
+
+3. cai dat CICFlowMeter giup chuyen du lieu pcap thanh Flow de phat hien bat thuong
+    git clone https://github.com/hieulw/cicflowmeter
+    cd cicflowmeter
+    sudo poetry install
 N. chay lenh khoi dong backend
     VD: /home/trung/.local/bin/uvicorn main:app --reload
