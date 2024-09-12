@@ -7,7 +7,7 @@ LogResourceList:
   # - file:///home/vothuonghd1998/BEdoan/file_test/testaccess1.log
   # - file:///home/vothuonghd1998/BEdoan/file_test/testdns12.log
   # - file:///home/vothuonghd1998/BEdoan/file_test/testaudit1.log
-  # - file:///home/vothuonghd1998/BEdoan/data_train/accessanomaly.log
+ 
 
 Parser:
   - id: ApacheAccessParsingModel
