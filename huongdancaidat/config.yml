@@ -1,12 +1,14 @@
 LearnMode: False
-
 Log.StatisticsLevel: 1
 
 Log.DebugLevel: 2
 
 LogResourceList:
-  # - file:///home/trung/Desktop/sang/testanomalyLogdataSuccessfull/train.log
-         
+  # - file:///home/vothuonghd1998/BEdoan/file_test/testaccess1.log
+  # - file:///home/vothuonghd1998/BEdoan/file_test/testdns12.log
+  # - file:///home/vothuonghd1998/BEdoan/file_test/testaudit1.log
+  # - file:///home/vothuonghd1998/BEdoan/data_train/accessanomaly.log
+  # - file:///home/vothuonghd1998/database/testdns12.log
 
 Parser:
   - id: ApacheAccessParsingModel
@@ -1930,9 +1932,224 @@ Analysis:
     path: "/model/opt/domain/domain"
     regex: "^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}(:[0-9]{1,5})*$"
 
+  - type: NewMatchPathValueDetector
+    id: apache_NMPVD
+    persistence_id: apache_NMPVD
+    paths:
+      - "/model/model/client_ip/client_ip"
+      - "/model/model/user_id"
+      - "/model/model/fm/request/request"
+
+  - type: NewMatchPathValueComboDetector
+    id: apache_NMPVCD
+    persistence_id: apache_NMPVCD
+    paths:
+      - "/model/model/client_ip/client_ip"
+      - "/model/model/combined/combined/user_agent"
+
+  - type: NewMatchPathValueComboDetector
+    id: apache_NMPVCD2
+    persistence_id: apache_NMPVCD2
+    paths:
+      - "/model/model/combined/combined/referer"
+      - "/model/model/fm/request/request"
+
+  - type: CharsetDetector
+    id: apache_CD
+    persistence_id: apache_CD
+    id_path_list:
+      - "/model/model/client_ip/client_ip"
+    paths:
+      - "/model/model/combined/combined/referer"
+
+  - type: EntropyDetector
+    id: apache_ED
+    persistence_id: apache_ED
+    paths:
+      - "/model/model/fm/request/request"
+
+  - type: ValueRangeDetector
+    id: apache_VRD
+    persistence_id: apache_VRD
+    paths:
+      - "/model/model/content_size"
+
+  # - type: EventFrequencyDetector
+  #   id: apache_EFD
+  #   persistence_id: apache_EFD
+  #   paths:
+  #     - "/model/model/status_code"
+
+  - type: NewMatchPathValueDetector
+    id: audit_NMPVD
+    persistence_id: audit_NMPVD
+    paths:
+      - "/model/model/type/service_stop/opt/opt_seq/exe"
+      - "/model/model/type/syscall/exe"
+      - "/model/model/type/cred_refr/opt/opt_seq/exe"
+      - "/model/model/type/user_start/opt/opt_seq/exe"
+      - "/model/model/type/user_acct/opt/opt_seq/exe"
+      - "/model/model/type/user_auth/opt/opt_seq/exe"
+      - "/model/model/type/user_login/opt/opt_seq/exe"
+      - "/model/model/type/cred_disp/opt/opt_seq/exe"
+      - "/model/model/type/service_start/opt/opt_seq/exe"
+      - "/model/model/type/service_stop/opt/opt_seq/exe"
+      - "/model/model/type/user_end/opt/opt_seq/exe"
+      - "/model/model/type/user_cmd/opt/opt_seq/exe"
+      - "/model/model/type/cred_acq/opt/opt_seq/exe"
+
+  - type: NewMatchPathValueComboDetector
+    id: audit_NMPVCD
+    persistence_id: audit_NMPVCD
+    paths:
+      - "/model/model/type/service_start/uid"
+      - "/model/model/type/service_start/opt/opt_seq/exe"
+
+  - type: CharsetDetector
+    id: audit_CD
+    persistence_id: audit_CD
+    id_path_list:
+      - "/model/model/type/cred_refr/id"
+      - "/model/model/type/user_start/id"
+      - "/model/model/type/user_acct/id"
+      - "/model/model/type/user_auth/id"
+      - "/model/model/type/user_login/id"
+      - "/model/model/type/cred_disp/id"
+      - "/model/model/type/service_start/id"
+      - "/model/model/type/service_stop/id"
+      - "/model/model/type/user_end/id"
+      - "/model/model/type/user_cmd/id"
+      - "/model/model/type/cred_acq/id"
+    paths:
+      - "/model/model/type/cred_refr/msg2"
+      - "/model/model/type/user_start/msg2"
+      - "/model/model/type/user_acct/msg2"
+      - "/model/model/type/user_auth/msg2"
+      - "/model/model/type/user_login/msg2"
+      - "/model/model/type/cred_disp/msg2"
+      - "/model/model/type/service_start/msg2"
+      - "/model/model/type/service_stop/msg2"
+      - "/model/model/type/user_end/msg2"
+      - "/model/model/type/user_cmd/msg2"
+      - "/model/model/type/cred_acq/msg2"
+
+  - type: EntropyDetector
+    id: audit_ED
+    persistence_id: audit_ED
+    paths:
+      - "/model/model/type/cred_refr/msg2"
+      - "/model/model/type/user_start/msg2"
+      - "/model/model/type/user_acct/msg2"
+      - "/model/model/type/user_auth/msg2"
+      - "/model/model/type/user_login/msg2"
+      - "/model/model/type/cred_disp/msg2"
+      - "/model/model/type/service_start/msg2"
+      - "/model/model/type/service_stop/msg2"
+      - "/model/model/type/user_end/msg2"
+      - "/model/model/type/user_cmd/msg2"
+      - "/model/model/type/cred_acq/msg2"
+
+  - type: ValueRangeDetector
+    id: audit_VRD
+    persistence_id: audit_VRD
+    paths:
+      - "/model/model/type/cred_refr/ses"
+      - "/model/model/type/user_start/ses"
+      - "/model/model/type/user_acct/ses"
+      - "/model/model/type/user_auth/ses"
+      - "/model/model/type/user_login/ses"
+      - "/model/model/type/cred_disp/ses"
+      - "/model/model/type/service_start/ses"
+      - "/model/model/type/service_stop/ses"
+      - "/model/model/type/user_end/ses"
+      - "/model/model/type/user_cmd/ses"
+      - "/model/model/type/cred_acq/ses"
+
+  # - type: EventFrequencyDetector
+  #   id: audit_EFD
+  #   persistence_id: audit_EFD
+  #   paths:
+  #     - "/model/model/type/user_start/id"
+
+  - type: NewMatchPathValueDetector
+    id: dns_NMPVD
+    persistence_id: dns_NMPVD
+    paths:
+      - "/model/model/type/nameserver/ip"
+      - "/model/model/pid"
+      - "/model/model/type/query/record"
+      - "/model/model/type/query/ip"
+      - "/model/model/type/forwarded/ip"
+      - "/model/model/type/cached/ip"
+      - "/model/model/type/forwarded/ip"
+
+  - type: NewMatchPathValueComboDetector
+    id: dns_NMPVCD1
+    persistence_id: dns_NMPVCD1
+    paths:
+      - "/model/model/type/nameserver/nameserver"
+      - "/model/model/type/nameserver/ip"
+      - "/model/model/type/nameserver/opt_domain/for_domain/domain"
+
+  - type: NewMatchPathValueComboDetector
+    id: dns_NMPVCD2
+    persistence_id: dns_NMPVCD2
+    paths:
+      - "/model/model/type/query/domain"
+      - "/model/model/type/query/ip"
+  
+  - type: NewMatchPathValueComboDetector
+    id: dns_NMPVCD3
+    persistence_id: dns_NMPVCD3
+    paths:
+      - "/model/model/type/forwarded/ip"
+      - "/model/model/type/forwarded/domain"
+
+  - type: NewMatchPathValueComboDetector
+    id: dns_NMPVCD4
+    persistence_id: dns_NMPVCD4
+    paths:
+      - "/model/model/type/reply/domain"
+      - "/model/model/type/reply/ip"
+
+  - type: NewMatchPathValueComboDetector
+    id: dns_NMPVCD5
+    persistence_id: dns_NMPVCD5
+    paths:
+      - "/model/model/type/cached/domain"
+      - "/model/model/type/cached/ip"
+
+  - type: CharsetDetector
+    id: dns_CD
+    persistence_id: dns_CD
+    id_path_list:
+      - "/model/model/pid"
+    paths:
+      - "/model/model/type/forwarded/domain"
+      - "/model/model/type/query/domain"
+      - "/model/model/type/nameserver/opt_domain/for_domain/domain"
+      - "/model/model/type/reply/domain"
+      - "/model/model/type/cached/domain"
+
+  - type: EntropyDetector
+    id: dns_ED
+    persistence_id: dns_ED
+    paths:
+      - "/model/model/type/forwarded/domain"
+      - "/model/model/type/query/domain"
+      - "/model/model/type/nameserver/opt_domain/for_domain/domain"
+      - "/model/model/type/reply/domain"
+      - "/model/model/type/cached/domain"
+
+  - type: ValueRangeDetector
+    id: dns_VRD
+    persistence_id: dns_VRD
+    paths:
+      - "/model/model/pid"
+
 Input:
   timestamp_paths: [""]
-  multi_source: False
+  multi_source: True
   adjust_timestamps: True
   #json_format: True
 

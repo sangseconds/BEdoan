@@ -10,6 +10,14 @@ luu y chuong trinh chay tren may ubuntu
 2. cai dat cac thu vien lien quan trong python (sudo)
     fastAPI
     uvicorn
+    readlink -f /usr/bin/java | sed "s:bin/java::" // tim duong dan cai java
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+    export PATH=$JAVA_HOME/bin:$PATH
+
+    export LD_LIBRARY_PATH=/home/vothuonghd1998/BEdoan/CICFlowMeter40/lib/native
+
+    export CLASSPATH=/home/vothuonghd1998/BEdoan/CICFlowMeter40/bin:/home/vothuonghd1998/BEdoan/CICFlowMeter40/lib/*
+
 3. cai dat poetry
     sudo curl -sSL https://install.python-poetry.org | python3 -
 
