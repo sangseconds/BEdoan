@@ -1,7 +1,0 @@
-EventId,EventTemplate,Occurrences
-97f26892,"<*> uid=0 <*> <*> <*> acct=""root"" exe=""/usr/sbin/cron"" hostname=? addr=? terminal=cron res=success'",530
-b7f8f4ff,<*> uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 <*> res=1,106
-fc005a8a,"pid=1 uid=0 auid=4294967295 ses=4294967295 <*> comm=""systemd"" exe=""/lib/systemd/systemd"" hostname=? addr=? terminal=? res=success'",84
-bcdeab80,"apparmor=""STATUS"" operation=""profile_replace"" profile=""unconfined"" <*> pid=30310 comm=""apparmor_parser""",4
-d8cf2379,"arch=c000003e syscall=1 success=yes <*> a0=6 <*> <*> a3=0 items=0 ppid=30309 pid=30310 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=pts0 ses=4294967295 comm=""apparmor_parser"" exe=""/sbin/apparmor_parser"" key=(null)",4
-0c9c36e2,proctitle=61707061726D6F725F706172736572002D72002D54002D57002F6574632F61707061726D6F722E642F7362696E2E6468636C69656E74,4
