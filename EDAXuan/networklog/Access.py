@@ -93,7 +93,7 @@ def pie_column_distribution(df: pd.DataFrame, column, start_time=None, end_time=
 
     # Lọc DataFrame theo khoảng thời gian
     df_filter = df.loc[(df['Timestamp'] >= start_time) & (df['Timestamp'] <= end_time)]
-    # Phân phối các loại sự kiện và lấy top N
+    # Phân phối các loại sự kiện
     column_counts = df_filter[column].value_counts()
     
     # Chuyển đổi kết quả thành danh sách các từ điển với 'name' và 'uv'

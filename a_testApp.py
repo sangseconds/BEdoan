@@ -19,9 +19,10 @@ from Sang.pcaptpCSV import convert_pcap_to_csv, read_csv_to_dataframe, predict_a
 from EDAXuan.nettraffic.edapcap import process_csv,generate_ip_map,generate_network_graph,analyze_ip_flows,num_event
 from EDAXuan.nettraffic.edapcap import plot_traffic_trend,plot_time_sum_column_trend,count_artifacts,plot_totlen_pkts_distribution,plot_address_distribution_barchart
 from EDAXuan.nettraffic.edapcap import plot_top_ip_pairs_by_frame_len,summarize_column,plot_protocol_pie_chart,plot_column_distribution_barchart
+from EDAXuan.nettraffic.edapcap import plot_pkts_traffic_trend,alert_general,bar_alert_categories,bar_alert_generating_hosts, bar_alert_receiving_hosts, pie_alert_generating_protocol
 
-from EDAXuan.networklog.DNS import process_log_files_dns,plot_ip_distribution,plot_dns_query_distribution
-from EDAXuan.nettraffic.edapcap import plot_pkts_traffic_trend
+
+from EDAXuan.networklog.DNS import process_log_files_dns,plot_ip_distribution,plot_dns_query_distribution,log_alert_general,log_bar_alert_categories
 from EDAXuan.networklog.Audit import process_log_files_audit,bar_column_distribution,plot_account_activity_over_time,classify_and_plot
 from EDAXuan.networklog.Access import process_log_files_access,plot_response_bytes_distribution,pie_column_distribution,get_method_status_counts,plot_log_trend
 
@@ -136,7 +137,7 @@ def generate_log_array(df):
 #Traffic
 
 @app.post("/Traffic/upload_and_process/", response_class=JSONResponse)
-async def upload_and_process_file(file: UploadFile = File(...),start_time: Optional[str] = None, end_time: Optional[str] = None,top:int = 10, time_sign = "min",db: Session = Depends(get_db)):
+async def upload_and_process_file(file: UploadFile = File(...),start_time: Optional[str] = None, end_time: Optional[str] = None, time_sign = "min",db: Session = Depends(get_db)):
     global global_df
     global network_dir
     global log_dir
@@ -170,11 +171,9 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 
     # Process CSV and add to results
     try:
-        # processed_file_path = process_csv(network_dir)
-        # global_df = pd.read_csv(processed_file_path,na_values=['', 'NULL'])
-        global_df = process_csv(network_dir)
-        combined_json = pd.concat([global_df, label_df], axis=1)
-        results.append(combined_json.to_dict(orient='records'))
+        global_df = process_csv(network_dir,file_location)
+        combined_df = pd.concat([global_df, label_df], axis=1)
+        results.append(combined_df.to_dict(orient='records'))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing CSV file: {str(e)}")
 
@@ -182,7 +181,6 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
     start_time = datetime.strptime(start_time, '%Y/%m/%d %H:%M:%S') if start_time else global_df['Timestamp'].min()
     end_time = datetime.strptime(end_time, '%Y/%m/%d %H:%M:%S') if end_time else global_df['Timestamp'].max()
     # time_sign='h'
-    # top = 10
 
     # Generate network graph and add to results
     try:
@@ -241,23 +239,21 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 
     # Get address distribution bar chart and add to results
     try:
-        top = 10
         column = 'Source IP'
-        address_distribution = plot_address_distribution_barchart(global_df, top, start_time=start_time, end_time=end_time, column=column)
+        address_distribution = plot_address_distribution_barchart(global_df, start_time=start_time, end_time=end_time, column=column)
         results.append(address_distribution)
 
         # Des ip
         column = 'Destination IP'
-        address_distribution = plot_address_distribution_barchart(global_df, top, start_time=start_time, end_time=end_time, column=column)
+        address_distribution = plot_address_distribution_barchart(global_df, start_time=start_time, end_time=end_time, column=column)
         results.append(address_distribution)
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-    # Plot top IP pairs by frame length and add to results
+    # Plot IP pairs by frame length and add to results
     try:
-        top = 10
-        ip_pairs_by_frame_len = plot_top_ip_pairs_by_frame_len(global_df, top, start_time, end_time)
+        ip_pairs_by_frame_len = plot_top_ip_pairs_by_frame_len(global_df, start_time, end_time)
         results.append(ip_pairs_by_frame_len)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -279,17 +275,16 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
     # Plot column distribution bar chart and add to results
     # tab4/M3,4 column="Application Protocol" or "Source Port" or "Destination Port"
     try:
-        top = 10
         column = 'Application Protocol'
-        column_distribution = plot_column_distribution_barchart(global_df, top, start_time, end_time, column)
+        column_distribution = plot_column_distribution_barchart(global_df, start_time, end_time, column)
         results.append(column_distribution)
 
         column = 'Source Port'
-        column_distribution = plot_column_distribution_barchart(global_df, top, start_time, end_time, column)
+        column_distribution = plot_column_distribution_barchart(global_df, start_time, end_time, column)
         results.append(column_distribution)
 
         column = 'Destination Port'
-        column_distribution = plot_column_distribution_barchart(global_df, top, start_time, end_time, column)
+        column_distribution = plot_column_distribution_barchart(global_df, start_time, end_time, column)
         results.append(column_distribution)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -321,9 +316,62 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         results.append(result_path.to_dict(orient="records"))
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+# Trả về ngày giờ bất thường
+        # Lấy các giá trị "Ngày/giờ" có sự kiện Anomaly là "Anomaly"
+        # Tạo một cột mới lấy phần giờ từ cột 'Timestamp' sau khi cắt bỏ phút và giây
+        # Tạo một cột mới lấy phần ngày và giờ (không bao gồm phút và giây)
+
+    try:    
+        combined_df['Anomaly_Min'] = combined_df['Timestamp'].str.slice(0, 16)  # Lấy định dạng "YYYY/MM/DD HH:MM"
+        anomaly_hours = combined_df[combined_df['Label'] == "Anomaly"]['Anomaly_Min'].to_dict()
+        # Lấy tất cả các giá trị từ dict
+        # Lấy các giá trị duy nhất
+        unique_values = sorted(list(set(anomaly_hours.values())))
+        # Kiểm tra lại sau khi thao tác
+        print("Traffic Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
+        results.append(unique_values)   
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# tab ALert
+# M1. Thông tin chung
+    try:
+        alert_general_result= alert_general(combined_df)
+        results.append(alert_general_result)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# M2. Alert Categories by Alert Count  
+    try:
+        alert_categories = bar_alert_categories(combined_df)
+        results.append(alert_categories)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
     
+
+# # M3. Top Alert-Generating Hosts
+    try:
+        alert_generating_hosts = bar_alert_generating_hosts(combined_df)
+        results.append(alert_generating_hosts)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
     
-    print("final: ", results[0])
+# # M4. Top Alert-receiving Hosts
+    try:
+        alert_receiving_hosts = bar_alert_receiving_hosts(combined_df)
+        results.append(alert_receiving_hosts)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# M5. Top Alert-Generating Protocols
+    try:
+        alert_generating_protocol = pie_alert_generating_protocol(combined_df)
+        results.append(alert_generating_protocol)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
     crud.create_traffic(db=db, traffic_data=results, file_path=file_location, file_name=network_filename)
     
     return results
@@ -388,7 +436,7 @@ def modify_config_and_run(file_location: str, output_command_name: str):
 
 
 @app.post("/log/upload_and_process/",response_class=JSONResponse)
-async def upload_and_process_file(file: UploadFile = File(...),start_time: Optional[str] = None, end_time: Optional[str] = None, top:int = 10,time_sign = "min", db: Session = Depends(get_db)):
+async def upload_and_process_file(file: UploadFile = File(...),start_time: Optional[str] = None, end_time: Optional[str] = None, time_sign = "min", db: Session = Depends(get_db)):
     # global structured_log_df, templates_log_df, log_dir, log_filename, output_counter
     global output_counter 
     file_location = f"/home/vothuonghd1998/database/{file.filename}"
@@ -479,8 +527,8 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         results.append(event_count)
 
         # Biểu đồ phân bố IP
-        top=10
-        ip_distribution = plot_ip_distribution(structured_log_df, start_time, end_time, top)
+
+        ip_distribution = plot_ip_distribution(structured_log_df, start_time, end_time)
         results.append(ip_distribution)
 
         # Biểu đồ phân bố DNS query
@@ -491,18 +539,26 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         # Lấy các giá trị "Ngày/giờ" có sự kiện Anomaly là "Anomaly"
         # Tạo một cột mới lấy phần giờ từ cột 'Timestamp' sau khi cắt bỏ phút và giây
         # Tạo một cột mới lấy phần ngày và giờ (không bao gồm phút và giây)
-        
         structured_log_df['Anomaly_Min'] = structured_log_df['Timestamp'].dt.strftime('%Y/%m/%d %H:%M')  # Lấy định dạng "YYYY/MM/DD HH"
         print(structured_log_df)
         anomaly_hours = structured_log_df[structured_log_df['Anomaly'] == "Anomaly"]['Anomaly_Min'].to_dict()
         # Lấy tất cả các giá trị từ dict
         # Lấy các giá trị duy nhất
-        unique_values = list(set(anomaly_hours.values()))
+        unique_values = sorted(list(set(anomaly_hours.values())))
         # Kiểm tra lại sau khi thao tác
         print("DNS Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
         for _ in range(5):
             results.append([])
         results.append(unique_values)
+
+# ALert
+# M1Alert. Thông tin chung
+        result = log_alert_general(structured_log_df)
+        results.append(result)
+#M2Alert. Thông tin sự kiện theo loại bất thường
+        result = log_bar_alert_categories(structured_log_df)
+        results.append(result)
+
 
         # return JSONResponse(content=results)
 
@@ -523,7 +579,6 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         start_time = datetime.strptime(start_time, '%Y/%m/%d %H:%M:%S') if start_time else structured_log_df['Timestamp'].min()
         end_time = datetime.strptime(end_time, '%Y/%m/%d %H:%M:%S') if end_time else structured_log_df['Timestamp'].max()
         # time_sign='h'
-        # top = 10
 
         # Biểu đồ phân bố template
         event_distribution = templates_log_df.groupby('EventTemplate')['Occurrences'].sum().reset_index()
@@ -545,23 +600,23 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 # 3.4 Phân phối của uid "uid"
 # 3.5 Tạo biểu đồ phân phối của exe "exe"
         column= "Type"
-        ip_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        ip_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(ip_distribution)
 
         column= "acct"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
         column= "pid"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
         column= "uid"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
         column= "exe"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
   # M4      
@@ -571,11 +626,8 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 # M5
         column_distribution=classify_and_plot(structured_log_df, start_time, end_time)
         results.append(column_distribution)
+
 # Trả về ngày giờ bất thường
-        # anomaly_hours = [entry['Timestamp'][:-6] for entry in structured_log_df if entry['Anomaly'] == "Anomaly"]
-        # results.append(anomaly_hours)
-        # print(anomaly_hours)
-        # Trả về ngày và giờ có sự kiện bất thường
         # Lấy các giá trị "Ngày/giờ" có sự kiện Anomaly là "Anomaly"
         # Tạo một cột mới lấy phần giờ từ cột 'Timestamp' sau khi cắt bỏ phút và giây
         # Tạo một cột mới lấy phần ngày và giờ (không bao gồm phút và giây)
@@ -585,11 +637,19 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         anomaly_hours = structured_log_df[structured_log_df['Anomaly'] == "Anomaly"]['Anomaly_Min'].to_dict()
         # Lấy tất cả các giá trị từ dict
         # Lấy các giá trị duy nhất
-        unique_values = list(set(anomaly_hours.values()))
+        unique_values = sorted(list(set(anomaly_hours.values())))
         # Kiểm tra lại sau khi thao tác
         print("Audit Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
         results.append([])
         results.append(unique_values)
+
+# ALert
+# M1Alert.Thông tin chung
+        result = log_alert_general(structured_log_df)
+        results.append(result)
+#M2Alert. Thông tin sự kiện theo loại bất thường
+        result = log_bar_alert_categories(structured_log_df)
+        results.append(result)
 
     elif log_type == "access":
         # Nếu log_type là "acccess", xử lý và vẽ biểu đồ
@@ -606,7 +666,6 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         start_time = datetime.strptime(start_time, '%Y/%m/%d %H:%M:%S') if start_time else structured_log_df['Timestamp'].min()
         end_time = datetime.strptime(end_time, '%Y/%m/%d %H:%M:%S') if end_time else structured_log_df['Timestamp'].max()
         # time_sign='h'
-        # top = 10
 
         # Biểu đồ phân bố template
         # M1
@@ -621,7 +680,7 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 
 #M3. Bar chart Phân bố Client_IP, User_Agent theo top column = Client_IP or User_Agent (M6_dạng bảng)
         column= "Client_IP"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
 
@@ -635,7 +694,7 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         results.append(column_distribution)
         # M6
         column= "User_Agent"
-        column_distribution = bar_column_distribution(structured_log_df, column, top, start_time, end_time)
+        column_distribution = bar_column_distribution(structured_log_df, column, start_time, end_time)
         results.append(column_distribution)
 
         # M7
@@ -663,10 +722,18 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         anomaly_hours = structured_log_df[structured_log_df['Anomaly'] == "Anomaly"]['Anomaly_Min'].to_dict()
         # Lấy tất cả các giá trị từ dict
         # Lấy các giá trị duy nhất
-        unique_values = list(set(anomaly_hours.values()))
+        unique_values = sorted(list(set(anomaly_hours.values())))
         # Kiểm tra lại sau khi thao tác
         print("Access Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
         results.append(unique_values)
+
+# ALert
+# Thông tin chung M1
+        result = log_alert_general(structured_log_df)
+        results.append(result)
+#Thông tin sự kiện theo loại bất thường
+        result = log_bar_alert_categories(structured_log_df)
+        results.append(result)
 
         # return JSONResponse(content=results)
     crud.create_log(db=db,log_data=results,file_path=file_location,file_name=log_filename,type_log=log_type)

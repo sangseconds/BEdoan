@@ -30,6 +30,14 @@ class Traffic(Base):
     m18 = Column(JSON)  # JSON object cho phần tử 18 (Xu hướng lưu lượng gói tin 1)
     m19 = Column(JSON)  # JSON object cho phần tử 19 (Xu hướng lưu lượng gói tin 2)
     m20 = Column(JSON)  # HTML block cho phần tử 20 (Bản đồ IP)
+    m21 = Column(JSON) # Time có sự kiện bất thường
+    m22 = Column(JSON) # Time có sự kiện bất thường
+    m23 = Column(JSON) # Time có sự kiện bất thường
+    m24 = Column(JSON) # Time có sự kiện bất thường
+    m25 = Column(JSON) # Time có sự kiện bất thường
+    m26 = Column(JSON) # Time có sự kiện bất thường
+    # m27 = Column(JSON) # Time có sự kiện bất thường
+    # m28 = Column(JSON) # Time có sự kiện bất thường
 
 class Log(Base):
     __tablename__ = "log"
@@ -49,3 +57,4 @@ class Log(Base):
     m9 = Column(JSON)
     m10 = Column(JSON)
     m11 = Column(JSON)
+    m12 = Column(JSON)

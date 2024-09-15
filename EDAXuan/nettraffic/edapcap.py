@@ -5,7 +5,7 @@ from fastapi.responses import JSONResponse
 
 # Cho phép nhiều event loop chạy đồng thời
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import pytz
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -17,14 +17,18 @@ import numpy as np
 import networkx as nx
 import json
 import ipaddress
+import nest_asyncio
+from concurrent.futures import ThreadPoolExecutor
+nest_asyncio.apply()
+
 
 
 df = pd.DataFrame()
-def process_csv(filepcap: str):
+def process_csv(filepcapcsv: str,filepcap:str):
     # Đọc dữ liệu từ file CSV đầu vào
-    global df 
-    df1 = pd.read_csv(filepcap)
-
+    # global df 
+    df1 = pd.read_csv(filepcapcsv)
+    df=pd.DataFrame()
     # Xử lý các cột cần thiết
     # df = pd.DataFrame()
     df['Flow ID'] = df1['Flow ID']
@@ -34,7 +38,7 @@ def process_csv(filepcap: str):
     df['Source Port'] = df1['Src Port']
     df['Destination Port'] = df1['Dst Port']
 
-    # Chuyển đổi múi giờ cho cột 'Timestamp'
+    # Chuyển đổi múi giờ cho cột 'Timestamp', đưa về dạng UTC
     df['Timestamp'] = pd.to_datetime(df['Timestamp'], format='%d/%m/%Y %I:%M:%S %p')
     # df['Timestamp'] = df['Timestamp'].dt.tz_localize('Asia/Ho_Chi_Minh')
     # df['Timestamp'] = df['Timestamp'].dt.tz_convert('UTC')
@@ -134,9 +138,108 @@ def process_csv(filepcap: str):
     df['Timestamp'] = df['Timestamp'].dt.strftime('%Y/%m/%d %H:%M:%S')
     # Thay thế NaN bằng giá trị mong muốn (ví dụ: 0)
     df.fillna(0, inplace=True)
+
+# Xử lí phần payload cho từng flow
+    # Function to format payload into a readable string
+    def format_readable(data):
+        return ''.join(chr(byte) if 32 <= byte <= 126 else '.' for byte in data)
+
+    # Function to extract key information from a packet
+    def get_packet_key(packet):
+        try:
+            src_ip = packet.ip.src
+            dst_ip = packet.ip.dst
+            if 'TCP' in packet:
+                return (src_ip, dst_ip, int(packet.tcp.srcport), int(packet.tcp.dstport), 'TCP', int(packet.tcp.seq))
+            elif 'UDP' in packet:
+                return (src_ip, dst_ip, int(packet.udp.srcport), int(packet.udp.dstport), 'UDP', 0)
+        except AttributeError:
+            return None
+
+    # Function to cache all packets from the pcap file
+    def cache_packets(pcap_file):
+        capture = pyshark.FileCapture(pcap_file, display_filter='tcp or udp', include_raw=True, use_json=True)
+        packet_cache = []
+
+        for packet in capture:
+            key = get_packet_key(packet)
+            if key:
+                # packet_time = (packet.sniff_time - timedelta(hours=7)).timestamp()  # Adjust to UTC
+                packet_time = (packet.sniff_time).timestamp()  # Adjust to UTC
+                packet_cache.append((key, packet_time, packet.get_raw_packet()))
+                print(packet.sniff_time)
+
+        capture.close()
+        return packet_cache
+
+    # Function to find payloads based on CSV row information and cached packets
+    def extract_payload_from_row(row, packet_cache):
+        try:
+            start_timestamp = datetime.strptime(row['Timestamp'], '%Y/%m/%d %H:%M:%S').timestamp()
+        except ValueError:
+            return "Invalid timestamp"
+
+        time_delta = float(row['Time_Delta']) / 10**6 + 1.0
+        end_timestamp = start_timestamp + time_delta
+
+        src_ip, dst_ip = row['Source IP'], row['Destination IP']
+        src_port, dst_port = int(row['Source Port']), int(row['Destination Port'])
+
+        client_to_server_payloads = []
+        server_to_client_payloads = []
+        packets_to_remove = []
+
+        for idx, (key, packet_time, payload) in enumerate(packet_cache):
+            p_src_ip, p_dst_ip, p_src_port, p_dst_port,protocol, _ = key
+            print(f"CSV Timestamp: {start_timestamp}, Packet Time: {packet_time}, Time Delta: {time_delta}")
+
+            if (src_ip == p_src_ip and dst_ip == p_dst_ip and src_port == p_src_port and dst_port == p_dst_port) and (start_timestamp <= packet_time <= end_timestamp):
+                if (p_src_ip, p_src_port) == (src_ip, src_port):
+                    client_to_server_payloads.append(payload)
+                else:
+                    server_to_client_payloads.append(payload)
+
+                # Mark this packet for removal since it satisfies the current row
+                packets_to_remove.append(idx)
+
+         # Remove the packets that have already been processed
+        for idx in sorted(packets_to_remove, reverse=True):
+            if idx < len(packet_cache):
+                del packet_cache[idx]
+
+        if not client_to_server_payloads and not server_to_client_payloads:
+            return "No payload found for the flow"
+
+        client_payload = format_readable(b''.join(client_to_server_payloads))
+        server_payload = format_readable(b''.join(server_to_client_payloads))
+
+        return f"Client to Server:\n{client_payload}\nServer to Client:\n{server_payload}"
+
+    # Function to handle payload extraction for parallel execution
+    def extract_payload_for_row(row, packet_cache):
+        return extract_payload_from_row(row, packet_cache)
+
+    # Main function to process the CSV and append the payloads
+    def process_csv_and_add_payloads(pcap_file):
+        # Cache all packets from the pcap file
+        packet_cache = cache_packets(pcap_file)
+        # # Extract payloads for each row in the CSV
+        # df['Payload'] = df.apply(lambda row: extract_payload_from_row(row, packet_cache), axis=1)
+        # Create a ThreadPoolExecutor for parallel execution
+        with ThreadPoolExecutor() as executor:
+            # Use the executor to apply `extract_payload_for_row` in parallel
+            results = list(executor.map(lambda row: extract_payload_for_row(row, packet_cache), [row for _, row in df.iterrows()]))
+
+        if len(results) != len(df):
+            raise ValueError("Mismatch between the number of results and DataFrame rows")
+        # Add the results as a new column to the DataFrame
+        df['Payload'] = results
+    # Process the CSV and add payloads
+    process_csv_and_add_payloads(filepcap)
+
     # Đặt tên file CSV mới và lưu file
-    filecsv = filepcap.replace('.csv', '_processed.csv')
-    df.to_csv(filecsv, index=False)
+    # filecsvlastresult = filepcapcsv.replace('.csv', '_processed.csv')
+    # df.to_csv(filecsvlastresult, index=False)
     return df
 
 
@@ -413,18 +516,16 @@ def plot_totlen_pkts_distribution(df, num_bins=8, start_time=None, end_time=None
 
 
  # Vẽ biểu đồ barchart thể hiện phân phối của Source / Destination address.
-def plot_address_distribution_barchart(df, top, start_time, end_time, column='Source IP'):
+def plot_address_distribution_barchart(df, start_time, end_time, column='Source IP'):
     df['Timestamp']=pd.to_datetime(df['Timestamp'])
     # Bước 1: Lọc dữ liệu theo khoảng thời gian
     df_filter = df[(df['Timestamp'] >= pd.to_datetime(start_time)) & (df['Timestamp'] <= pd.to_datetime(end_time))]
 
     # Bước 2: Tính tần suất của từng giá trị trong cột
-    source_distribution = df_filter[column].value_counts().head(top)
+    source_distribution = df_filter[column].value_counts()
 
     # Bước 3: Tạo cấu trúc dữ liệu dạng JSON
     data = []
-        
-    
 
     for name, count in source_distribution.items():
         data.append({
@@ -438,7 +539,7 @@ def plot_address_distribution_barchart(df, top, start_time, end_time, column='So
 
 # tab 3_M5
 # Biểu đồ cột cặp IP source>destination theo total length
-def plot_top_ip_pairs_by_frame_len(df, top, start_time, end_time):
+def plot_top_ip_pairs_by_frame_len(df, start_time, end_time):
     """
     Lọc dữ liệu theo khoảng thời gian, nhóm theo cặp Source IP và Destination IP, tính tổng `Totlen Pkts`,
     và trả về dữ liệu dưới dạng JSON với `name` là cặp IP và `uv` là tổng `Totlen Pkts`.
@@ -464,13 +565,10 @@ def plot_top_ip_pairs_by_frame_len(df, top, start_time, end_time):
     # Bước 4: Tạo cột mới kết hợp Source IP và Destination IP
     sorted_df["Ip_pair"] = sorted_df["Source IP"] + " -> " + sorted_df["Destination IP"]
 
-    # Bước 5: Chọn top N cặp IP hàng đầu
-    top_sorted_df = sorted_df.head(top)
-
     # Bước 6: Tạo cấu trúc dữ liệu JSON
     data = []
 
-    for _, row in top_sorted_df.iterrows():
+    for _, row in sorted_df.iterrows():
         data.append({
             "name": row["Ip_pair"],
             "uv": row["Totlen Pkts"]
@@ -534,13 +632,13 @@ def plot_protocol_pie_chart(df, start_time=None, end_time=None):
     return data
 
 # M3,4: Biểu đồ phân bố theo cột không phải dạng số theo top
-def plot_column_distribution_barchart(df, top, start_time=None, end_time=None, column='Source Port'):
+def plot_column_distribution_barchart(df, start_time=None, end_time=None, column='Source Port'):
     
     # Bước 1: Lọc dữ liệu theo khoảng thời gian
     df_filter = df[(df['Timestamp'] >= start_time) & (df['Timestamp'] <= end_time)]
 
     # Bước 2: Tính tần suất của từng giá trị trong cột và lấy top giá trị xuất hiện nhiều nhất
-    source_distribution = df_filter[column].value_counts().head(top)
+    source_distribution = df_filter[column].value_counts()
 
     # Tạo cấu trúc dữ liệu JSON
     data = []
@@ -575,4 +673,93 @@ def plot_pkts_traffic_trend(df, column, time_sign='h', start_time=None, end_time
 # bảng hiện thông tin chi tiết
 def detail_log(df):
     return df
+
+# Tab alert
+def alert_general(df):
+        # Lọc các sự kiện có Label = 'Anomaly'
+    anomaly_df = df[df['Label'] == 'Anomaly']
+        # Kiểm tra nếu anomaly_df là mảng rỗng
+    if anomaly_df.empty:
+        return []
+    # Bước 1: Đếm số lượng sự kiện (alerts) có Label = 'Anomaly'
+    alert_count = anomaly_df.shape[0]  # Số hàng có nhãn 'Anomaly'
+    # Bước 2: Lấy tất cả IP từ cột 'Source IP' và 'Destination IP' và đếm số lượng IP duy nhất
+    all_ips = pd.concat([anomaly_df['Source IP'], anomaly_df['Destination IP']]).unique()
+    unique_ip_count = len(all_ips)
+    # Trả về kết quả dưới dạng mảng
+    return [str(alert_count),str(unique_ip_count)]
+
+def bar_alert_categories(df):
+    # Đếm số lượng theo nhãn Label
+    label_counts = df['Label'].value_counts()
+    print (f"label_counts:{label_counts}")
+    # Chuyển đổi thành dạng danh sách với cặp name-uv
+    result = [{"name": label, "uv": str(count)} for label, count in label_counts.items()]
+    return result
+
+def bar_alert_generating_hosts(df):
+    # Lọc các sự kiện có Label = 'Anomaly'
+    anomaly_df = df[df['Label'] == 'Anomaly']
+    
+    # Kiểm tra nếu anomaly_df là mảng rỗng
+    if anomaly_df.empty:
+        return []
+    
+    # Lấy tất cả IP từ cột 'Source IP' và 'Destination IP'
+    source_ips = anomaly_df['Source IP']
+    destination_ips = anomaly_df['Destination IP']
+    
+    # Tạo một DataFrame chứa cả 'Source IP' và 'Destination IP' để dễ dàng tính toán
+    ip_df = pd.concat([source_ips, destination_ips], axis=0)
+    
+    # Lọc ra các IP public
+    public_ips = ip_df[ip_df.apply(is_public_ip)]
+    
+    # Đếm số sự kiện (alerts) liên quan đến mỗi IP public
+    ip_counts = public_ips.value_counts()
+    
+    # Chuyển đổi thành danh sách các từ điển có định dạng như bạn muốn
+    result_list = [{'name': ip,'uv': str(count)} for count, ip  in ip_counts.items()]
+    
+    return result_list
+
+def bar_alert_receiving_hosts(df):
+    # Lọc các sự kiện có Label = 'Anomaly'
+    anomaly_df = df[df['Label'] == 'Anomaly']
+    
+    # Kiểm tra nếu anomaly_df là mảng rỗng
+    if anomaly_df.empty:
+        return []
+    
+    # Lấy tất cả IP từ cột 'Source IP' và 'Destination IP'
+    source_ips = anomaly_df['Source IP']
+    destination_ips = anomaly_df['Destination IP']
+    
+    # Tạo một DataFrame chứa cả 'Source IP' và 'Destination IP' để dễ dàng tính toán
+    ip_df = pd.concat([source_ips, destination_ips], axis=0)
+    
+    # Lọc ra các IP public
+    private_ips = ip_df[ip_df.apply(lambda ip: not is_public_ip(ip))]
+    
+    # Đếm số sự kiện (alerts) liên quan đến mỗi IP public
+    ip_counts = private_ips.value_counts()
+    
+    # Chuyển đổi thành danh sách các từ điển có định dạng như bạn muốn
+    result_list = [{'name': ip,'uv': str(count)} for count, ip  in ip_counts.items()]
+    
+    return result_list
+
+def pie_alert_generating_protocol(df):
+    # Chuyển cột 'Application Protocol' thành chuỗi
+    df['Application Protocol'] = df['Application Protocol'].fillna('').astype(str)
+    anomaly_df = df[df['Label'] == 'Anomaly']
+        # Kiểm tra nếu anomaly_df là mảng rỗng
+    if anomaly_df.empty:
+        return [] 
+    # Lấy tất cả IP từ cột 'Source IP' và 'Destination IP'
+    alert_protocol = anomaly_df['Application Protocol'].value_counts()
+    alert_protocol = [{"name": label, "uv": str(count)} for label, count in alert_protocol.items()]
+    return alert_protocol
+    
+
 

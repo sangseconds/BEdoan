@@ -39,7 +39,16 @@ def create_traffic(db: Session, traffic_data: dict, file_path: str, file_name: s
         m17=traffic_data[16],  # JSON object
         m18=traffic_data[17],  # JSON object
         m19=traffic_data[18],  # JSON object
-        m20=traffic_data[19]  # HTML block
+        m20=traffic_data[19],  # HTML block
+        m21=traffic_data[20] if len(traffic_data) > 20 else None,  # HTML block
+        m22=traffic_data[21] if len(traffic_data) > 21 else None ,  # HTML block
+        m23=traffic_data[22] if len(traffic_data) > 22 else None ,  # HTML block
+        m24=traffic_data[23] if len(traffic_data) > 23 else None ,  # HTML block
+        m25=traffic_data[24] if len(traffic_data) > 24 else None ,  # HTML block
+        m26=traffic_data[25] if len(traffic_data) > 25 else None   # HTML block
+        # m27=traffic_data[26] if len(traffic_data) > 26 else None ,  # HTML block
+        # m28=traffic_data[27] if len(traffic_data) > 27 else None  # HTML block
+
     )
     db.add(db_traffic)
     db.commit()
@@ -75,6 +84,7 @@ def create_log(db: Session, log_data: dict, file_path: str, file_name: str, type
         m9=log_data[8] if len(log_data) > 8 else None,
         m10=log_data[9] if len(log_data) > 9 else None,
         m11=log_data[10] if len(log_data) > 10 else None,
+        m12=log_data[11] if len(log_data) > 11 else None,
         
     )
     db.add(db_log)

@@ -1,0 +1,186 @@
+2024-09-14 03:02:32 New value(s) detected
+NewMatchPathValueDetector: "apache_NMPVD" (1 lines)
+  {'/model/model/fm/request/request': '/favicon.ico'}
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD2" (1 lines)
+  (b'http://intranet.smith.russellmitchell.com/', b'/favicon.ico')
+
+2024-09-14 03:02:32 New value(s) detected
+NewMatchPathValueDetector: "apache_NMPVD" (1 lines)
+  {'/model/model/fm/request/request': '/favicon.ico'}
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD2" (1 lines)
+  (b'https://intranet.smith.russellmitchell.com/?p=5', b'/favicon.ico')
+
+2024-09-14 03:02:32 New path(es) detected
+NewMatchPathDetector: "DefaultNewMatchPathDetector" (1 lines)
+  /model/model: 172.19.131.174 - - [21/Jan/2022:07:31:01 +0000] "-" 408 3020 "-" "-"
+  /model/model/client_ip/client_ip: 2886960046
+  /model/model/sp1:  
+  /model/model/client_id: -
+  /model/model/sp2:  
+  /model/model/user_id: -
+  /model/model/sp3:  [
+  /model/model/time: 1642750261
+  /model/model/sp4: ] "
+  /model/model/fm/dash: -
+  /model/model/sp7: " 
+  /model/model/status_code: 408
+  /model/model/sp8:  
+  /model/model/content_size: 3020
+  /model/model/combined:  "-" "-"
+    /model/model/combined/combined:  "-" "-"
+      /model/model/combined/combined/sp9:  "
+      /model/model/combined/combined/referer: -
+      /model/model/combined/combined/sp10: " "
+      /model/model/combined/combined/user_agent: -
+      /model/model/combined/combined/sp11: "
+['/model/model/fm/dash']
+172.19.131.174 - - [21/Jan/2022:07:31:01 +0000] "-" 408 3020 "-" "-"
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD" (1 lines)
+  (2886960046, b'-')
+
+2024-09-14 03:02:32 New path(es) detected
+NewMatchPathDetector: "DefaultNewMatchPathDetector" (1 lines)
+  /model/model: 172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+  /model/model/client_ip/client_ip: 2886960046
+  /model/model/sp1:  
+  /model/model/client_id: -
+  /model/model/sp2:  
+  /model/model/user_id: -
+  /model/model/sp3:  [
+  /model/model/time: 1642751878
+  /model/model/sp4: ] "
+  /model/model/fm/dash: -
+  /model/model/sp7: " 
+  /model/model/status_code: 408
+  /model/model/sp8:  
+  /model/model/content_size: 3020
+  /model/model/combined:  "-" "-"
+    /model/model/combined/combined:  "-" "-"
+      /model/model/combined/combined/sp9:  "
+      /model/model/combined/combined/referer: -
+      /model/model/combined/combined/sp10: " "
+      /model/model/combined/combined/user_agent: -
+      /model/model/combined/combined/sp11: "
+['/model/model/fm/dash']
+172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD" (1 lines)
+  (2886960046, b'-')
+
+2024-09-14 03:02:32 New path(es) detected
+NewMatchPathDetector: "DefaultNewMatchPathDetector" (1 lines)
+  /model/model: 172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+  /model/model/client_ip/client_ip: 2886960046
+  /model/model/sp1:  
+  /model/model/client_id: -
+  /model/model/sp2:  
+  /model/model/user_id: -
+  /model/model/sp3:  [
+  /model/model/time: 1642751878
+  /model/model/sp4: ] "
+  /model/model/fm/dash: -
+  /model/model/sp7: " 
+  /model/model/status_code: 408
+  /model/model/sp8:  
+  /model/model/content_size: 3020
+  /model/model/combined:  "-" "-"
+    /model/model/combined/combined:  "-" "-"
+      /model/model/combined/combined/sp9:  "
+      /model/model/combined/combined/referer: -
+      /model/model/combined/combined/sp10: " "
+      /model/model/combined/combined/user_agent: -
+      /model/model/combined/combined/sp11: "
+['/model/model/fm/dash']
+172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD" (1 lines)
+  (2886960046, b'-')
+
+2024-09-14 03:02:32 New path(es) detected
+NewMatchPathDetector: "DefaultNewMatchPathDetector" (1 lines)
+  /model/model: 172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+  /model/model/client_ip/client_ip: 2886960046
+  /model/model/sp1:  
+  /model/model/client_id: -
+  /model/model/sp2:  
+  /model/model/user_id: -
+  /model/model/sp3:  [
+  /model/model/time: 1642751878
+  /model/model/sp4: ] "
+  /model/model/fm/dash: -
+  /model/model/sp7: " 
+  /model/model/status_code: 408
+  /model/model/sp8:  
+  /model/model/content_size: 3020
+  /model/model/combined:  "-" "-"
+    /model/model/combined/combined:  "-" "-"
+      /model/model/combined/combined/sp9:  "
+      /model/model/combined/combined/referer: -
+      /model/model/combined/combined/sp10: " "
+      /model/model/combined/combined/user_agent: -
+      /model/model/combined/combined/sp11: "
+['/model/model/fm/dash']
+172.19.131.174 - - [21/Jan/2022:07:57:58 +0000] "-" 408 3020 "-" "-"
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD" (1 lines)
+  (2886960046, b'-')
+
+2024-09-14 03:02:32 New value(s) detected
+NewMatchPathValueDetector: "apache_NMPVD" (1 lines)
+  {'/model/model/fm/request/request': '/favicon.ico'}
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD2" (1 lines)
+  (b'http://intranet.smith.russellmitchell.com/', b'/favicon.ico')
+
+2024-09-14 03:02:32 New value(s) detected
+NewMatchPathValueDetector: "apache_NMPVD" (1 lines)
+  {'/model/model/fm/request/request': '/favicon.ico'}
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD2" (1 lines)
+  (b'https://intranet.smith.russellmitchell.com/?p=5', b'/favicon.ico')
+
+2024-09-14 03:02:32 New path(es) detected
+NewMatchPathDetector: "DefaultNewMatchPathDetector" (1 lines)
+  /model/model: 172.19.131.174 - - [21/Jan/2022:08:49:29 +0000] "-" 408 0 "-" "-"
+  /model/model/client_ip/client_ip: 2886960046
+  /model/model/sp1:  
+  /model/model/client_id: -
+  /model/model/sp2:  
+  /model/model/user_id: -
+  /model/model/sp3:  [
+  /model/model/time: 1642754969
+  /model/model/sp4: ] "
+  /model/model/fm/dash: -
+  /model/model/sp7: " 
+  /model/model/status_code: 408
+  /model/model/sp8:  
+  /model/model/content_size: 0
+  /model/model/combined:  "-" "-"
+    /model/model/combined/combined:  "-" "-"
+      /model/model/combined/combined/sp9:  "
+      /model/model/combined/combined/referer: -
+      /model/model/combined/combined/sp10: " "
+      /model/model/combined/combined/user_agent: -
+      /model/model/combined/combined/sp11: "
+['/model/model/fm/dash']
+172.19.131.174 - - [21/Jan/2022:08:49:29 +0000] "-" 408 0 "-" "-"
+
+2024-09-14 03:02:32 New value combination(s) detected
+NewMatchPathValueComboDetector: "apache_NMPVCD" (1 lines)
+  (2886960046, b'-')
+
+2024-09-14 03:02:32 Value range anomaly detected
+ValueRangeDetector: "apache_VRD" (1 lines)
+  172.19.131.174 - - [21/Jan/2022:08:49:29 +0000] "-" 408 0 "-" "-"
+
