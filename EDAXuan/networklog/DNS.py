@@ -93,7 +93,7 @@ def plot_event_counts(df, time_unit='D', title='Number of DNS Events', xlabel='T
 
 #M3
 # Phân bố các sự kiện theo IP nguồn
-def plot_ip_distribution(df, start_time=None, end_time=None, top=10):
+def plot_ip_distribution(df, start_time=None, end_time=None):
     start_time = pd.to_datetime(start_time)
     end_time = pd.to_datetime(end_time)
     df['Timestamp']=pd.to_datetime(df['Timestamp'])
@@ -108,8 +108,8 @@ def plot_ip_distribution(df, start_time=None, end_time=None, top=10):
     if df_filter['Source IP'].dropna().empty:
         return {"message": "No valid IP addresses found in the data."}
 
-    # Đếm số lần xuất hiện của các địa chỉ IP và chọn top N
-    ip_distribution = df_filter['Source IP'].value_counts().head(top).reset_index()
+    # Đếm số lần xuất hiện của các địa chỉ IP
+    ip_distribution = df_filter['Source IP'].value_counts().reset_index()
     ip_distribution.columns = ['name', 'uv']
 
     # Trả về dữ liệu dưới dạng JSON
@@ -165,23 +165,26 @@ def plot_event_templates_over_time(df, start_time=None, end_time=None, output_fi
 def detail_log(df):
     return df[['LineId','Timestamp','Process','Content','EventTemplate']]
 
-# template dạng bảng
-# template_df = table_event_distribution(templates_log_df)
-# # # Template của sự kiện dạng biểu đồ
-# output_file = plot_event_distribution(templates_log_df, output_file='result.png')
+# Alert
+# Tab alert
+def log_alert_general(df):
+    # Chuyển cột 'Anomaly' thành chuỗi
+    # df['Anomaly'] = df['Anomaly'].fillna('').astype(str)
+    # Lọc các sự kiện có Label = 'Anomaly'
+    anomaly_df = df[df['Anomaly'] == 'Anomaly']
+        # Kiểm tra nếu anomaly_df là mảng rỗng
+    if anomaly_df.empty:
+        return []
+    # Bước 1: Đếm số lượng sự kiện (alerts) có Label = 'Anomaly'
+    alert_count = anomaly_df.shape[0]  # Số hàng có nhãn 'Anomaly'
+    # Trả về kết quả dưới dạng mảng
+    return [str(alert_count)]
 
-# # hàm tính số lượng sự kiện theo ngày
-# output_file = plot_event_counts(structured_log_df, time_unit='D', title='Total Number of DNS Events per Day', xlabel='Date', start_time=start_time, end_time=end_time, output_file='result.png')
-# # Sử dụng hàm để tính số lượng sự kiện theo giờ
-# output_file = plot_event_counts(structured_log_df, time_unit='h', title='Total Number of DNS Events per Day', xlabel='Date', start_time=start_time, end_time=end_time, output_file='result.png')
-
-# # Phân bố các sự kiện theo IP nguồn
-# output_file = plot_ip_distribution(structured_log_df, start_time=start_time, end_time=end_time, output_file='result.png')
-
-# # vẽ biểu đồ phân bố các loại yêu cầu DNS.
-# output_file = plot_dns_query_distribution(structured_log_df,start_time=start_time, end_time=end_time, output_file='result.png')
-
-# # Sự thay đổi trong các mẫu sự kiện theo thời gian
-# output_file = plot_event_templates_over_time(structured_log_df, start_time=start_time, end_time=end_time, output_file='result.png')
-# # Hiện thông tin chi tiết bảng
-# detail_table = detail_log(structured_log_df)
+def log_bar_alert_categories(df):
+    # Chuyển cột 'Anomaly' thành chuỗi
+    # df['Anomaly'] = df['Anomaly'].fillna('').astype(str)
+    # Đếm số lượng theo nhãn Label
+    label_counts = df['Anomaly'].value_counts()
+    # Chuyển đổi thành dạng danh sách với cặp name-uv
+    result = [{"name": label, "uv": str(count)} for label, count in label_counts.items()]
+    return result

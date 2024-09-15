@@ -76,7 +76,7 @@ def process_log_files_audit(input_dir = "./EDAXuan/networklog/example", log_file
 
     return df_combined, templates_log_df
 
-def bar_column_distribution(df, column: str, top: int = 10, start_time=None, end_time=None):
+def bar_column_distribution(df, column: str,start_time=None, end_time=None):
     # Chuyển đổi thời gian từ chuỗi sang datetime nếu có
     start_time_dt = pd.to_datetime(start_time) if start_time else df['Timestamp'].min()
     end_time_dt = pd.to_datetime(end_time) if end_time else df['Timestamp'].max()
@@ -85,8 +85,8 @@ def bar_column_distribution(df, column: str, top: int = 10, start_time=None, end
     # Lọc DataFrame theo khoảng thời gian
     # df_filter = df.loc[(df['Timestamp'] >= start_time) & (df['Timestamp'] <= end_time)]
     df_filter = df.loc[(df['Timestamp'] >= start_time_dt) & (df['Timestamp'] <= end_time_dt)]
-    # Phân phối các loại sự kiện và lấy top N
-    column_counts = df_filter[column].value_counts().head(top)
+    # Phân phối các loại sự kiện
+    column_counts = df_filter[column].value_counts()
     
     # Chuyển đổi kết quả thành danh sách các từ điển với 'name' và 'uv'
     result = [{'name': name, 'uv': count} for name, count in column_counts.items()]
@@ -161,32 +161,3 @@ def classify_and_plot(df: pd.DataFrame, start_time=None, end_time=None):
     return result
 
 
-# hàm chạy code
-# M1 Template dạng bảng
-# template_df = table_event_distribution(templates_log_df)
-
-# # M2 Sử dụng hàm để tính số lượng sự kiện theo ngày
-# output_file = plot_event_counts(df, time_unit='D', title='Total Number of DNS Events per Day', xlabel='Dates',start_time=start_time, end_time= end_time, output_file='result.png')
-# # theo giờ
-# output_file = plot_event_counts(df, time_unit='h', title='Total Number of DNS Events per hour', xlabel='Hour',start_time=start_time, end_time= end_time, output_file='result.png')
-
-# M3
-# # M3.1 Phân phối của Event Type
-# bar_column_distribution(df,'Type', title=' Distribution of Event Type', xlabel='Event Type', ylabel='Count', top = df['Type'].nunique(), start_time=start_time, end_time=end_time, output_file='result.png')
-# M3.2 Phân phối của Account
-# bar_column_distribution(df,'acct', title='Distribution of Account activity', xlabel='Account', ylabel='Count', top = df['acct'].nunique(), start_time=start_time, end_time=end_time, output_file='result.png')
-# M3.3 Phân phối của Pid
-# bar_column_distribution(df,'pid', title='Distribution of Process ID Activity', xlabel='PID', ylabel='Count', top =10, start_time=start_time, end_time=end_time, output_file='result.png')
-# 3.4 Phân phối của uid
-# bar_column_distribution(df,'uid', title='Distribution of User ID Activity', xlabel='User ID', ylabel='Count', top =10, start_time=start_time, end_time=end_time, output_file='result.png')
-# 3.5 Tạo biểu đồ phân phối của exe
-# output_file =bar_column_distribution(df,'exe', title='Distribution of EXE command', xlabel='Exe Command', ylabel='Count', top =10, start_time=start_time, end_time=end_time, output_file='result.png')
-
-# # Vẽ biểu đồ hoạt động theo thời gian cho một tài khoản cụ thể
-# output_file = plot_account_activity_over_time(df, account='root', time_unit='h', start_time=start_time, end_time=end_time, output_file='result.png')
-
-# # Ví dụ sử dụng hàm để tạo bảng phân bố exe
-#
-
-# # Phân loại event thành công hay thất bại
-# output_file = classify_and_plot(df, start_time=start_time, end_time=end_time, output_file='result.png')

@@ -1,0 +1,8 @@
+EventId,EventTemplate,Occurrences
+40f8343b,query[A] <*> from <*>,1506
+bef4b736,forwarded <*> to <*>,1881
+1c20f0f3,query[AAAA] <*> from <*>,341
+a1c209ec,reply <*> is <*>,2921
+614e0e47,query[TXT] current.cvd.clamav.net from <*>,47
+03e173c6,query[SRV] <*> from <*>,7
+252bed77,cached <*> is NXDOMAIN,20
