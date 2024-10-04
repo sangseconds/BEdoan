@@ -22,7 +22,7 @@
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.git/HEAD HTTP/1.1" 404 363 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.history HTTP/1.1" 404 363 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.hta HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
-172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.hta_ HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.hta_ HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.http://intranet.smith.russellmitchell.com/1)"
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.htaccess HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.htaccess_ HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
 172.19.131.174 - - [24/Jan/2022:03:57:26 +0000] "GET /.htpasswd HTTP/1.1" 403 366 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"

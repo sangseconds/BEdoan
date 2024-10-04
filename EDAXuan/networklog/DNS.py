@@ -168,21 +168,22 @@ def detail_log(df):
 # Alert
 # Tab alert
 def log_alert_general(df):
+    sum_count = df.shape[0]  # Số hàng có nhãn 'Anomaly'
+    # Trả về kết quả dưới dạng mảng
     # Chuyển cột 'Anomaly' thành chuỗi
     # df['Anomaly'] = df['Anomaly'].fillna('').astype(str)
     # Lọc các sự kiện có Label = 'Anomaly'
     anomaly_df = df[df['Anomaly'] == 'Anomaly']
         # Kiểm tra nếu anomaly_df là mảng rỗng
     if anomaly_df.empty:
-        return []
+        alert_count = 0
     # Bước 1: Đếm số lượng sự kiện (alerts) có Label = 'Anomaly'
     alert_count = anomaly_df.shape[0]  # Số hàng có nhãn 'Anomaly'
     # Trả về kết quả dưới dạng mảng
-    return [str(alert_count)]
+    return [str(sum_count), str(alert_count)]
 
 def log_bar_alert_categories(df):
     # Chuyển cột 'Anomaly' thành chuỗi
-    # df['Anomaly'] = df['Anomaly'].fillna('').astype(str)
     # Đếm số lượng theo nhãn Label
     label_counts = df['Anomaly'].value_counts()
     # Chuyển đổi thành dạng danh sách với cặp name-uv

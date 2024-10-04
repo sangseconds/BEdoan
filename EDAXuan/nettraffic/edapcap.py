@@ -2,6 +2,7 @@ import nest_asyncio
 import pyshark
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
+import subprocess
 
 # Cho phép nhiều event loop chạy đồng thời
 import pandas as pd
@@ -141,100 +142,227 @@ def process_csv(filepcapcsv: str,filepcap:str):
 
 # Xử lí phần payload cho từng flow
     # Function to format payload into a readable string
+# hàm cũ
+    # def format_readable(data):
+    #     return ''.join(chr(byte) if 32 <= byte <= 126 else '.' for byte in data)
+
+    # # Function to extract key information from a packet
+    # def get_packet_key(packet):
+    #     try:
+    #         src_ip = packet.ip.src
+    #         dst_ip = packet.ip.dst
+    #         if 'TCP' in packet:
+    #             return (src_ip, dst_ip, int(packet.tcp.srcport), int(packet.tcp.dstport), 'TCP', int(packet.tcp.seq))
+    #         elif 'UDP' in packet:
+    #             return (src_ip, dst_ip, int(packet.udp.srcport), int(packet.udp.dstport), 'UDP', 0)
+    #     except AttributeError:
+    #         return None
+
+    # # Function to cache all packets from the pcap file
+    # def cache_packets(pcap_file):
+    #     capture = pyshark.FileCapture(pcap_file, display_filter='tcp or udp', include_raw=True, use_json=True)
+    #     packet_cache = []
+
+    #     for packet in capture:
+    #         key = get_packet_key(packet)
+    #         if key:
+    #             # packet_time = (packet.sniff_time - timedelta(hours=7)).timestamp()  # Adjust to UTC
+    #             packet_time = (packet.sniff_time).timestamp()  # Adjust to UTC
+    #             packet_cache.append((key, packet_time, packet.get_raw_packet()))
+    #             # print(packet.sniff_time)
+
+    #     capture.close()
+    #     return packet_cache
+
+    # # Function to find payloads based on CSV row information and cached packets
+    # def extract_payload_from_row(row, packet_cache):
+    #     try:
+    #         start_timestamp = datetime.strptime(row['Timestamp'], '%Y/%m/%d %H:%M:%S').timestamp()
+    #     except ValueError:
+    #         return "Invalid timestamp"
+
+    #     time_delta = float(row['Time_Delta']) / 10**6 + 1.0
+    #     end_timestamp = start_timestamp + time_delta
+
+    #     src_ip, dst_ip = row['Source IP'], row['Destination IP']
+    #     src_port, dst_port = int(row['Source Port']), int(row['Destination Port'])
+
+    #     client_to_server_payloads = []
+    #     server_to_client_payloads = []
+    #     packets_to_remove = []
+
+    #     for idx, (key, packet_time, payload) in enumerate(packet_cache):
+    #         p_src_ip, p_dst_ip, p_src_port, p_dst_port,protocol, _ = key
+    #         print(f"CSV Timestamp: {start_timestamp}, Packet Time: {packet_time}, Time Delta: {time_delta}")
+
+    #         if (src_ip == p_src_ip and dst_ip == p_dst_ip and src_port == p_src_port and dst_port == p_dst_port) and (start_timestamp <= packet_time <= end_timestamp):
+    #             if (p_src_ip, p_src_port) == (src_ip, src_port):
+    #                 client_to_server_payloads.append(payload)
+    #             else:
+    #                 server_to_client_payloads.append(payload)
+
+    #             # Mark this packet for removal since it satisfies the current row
+    #             packets_to_remove.append(idx)
+
+    #      # Remove the packets that have already been processed
+    #     for idx in sorted(packets_to_remove, reverse=True):
+    #         if idx < len(packet_cache):
+    #             del packet_cache[idx]
+
+    #     if not client_to_server_payloads and not server_to_client_payloads:
+    #         return "No payload found for the flow"
+
+    #     client_payload = format_readable(b''.join(client_to_server_payloads))
+    #     server_payload = format_readable(b''.join(server_to_client_payloads))
+
+    #     return f"Client to Server:\n{client_payload}\nServer to Client:\n{server_payload}"
+
+    # # Function to handle payload extraction for parallel execution
+    # def extract_payload_for_row(row, packet_cache):
+    #     return extract_payload_from_row(row, packet_cache)
+
+    # # Main function to process the CSV and append the payloads
+    # def process_csv_and_add_payloads(pcap_file):
+    #     # Cache all packets from the pcap file
+    #     packet_cache = cache_packets(pcap_file)
+    #     # # Extract payloads for each row in the CSV
+    #     # df['Payload'] = df.apply(lambda row: extract_payload_from_row(row, packet_cache), axis=1)
+    #     # Create a ThreadPoolExecutor for parallel execution
+    #     with ThreadPoolExecutor() as executor:
+    #         # Use the executor to apply `extract_payload_for_row` in parallel
+    #         results = list(executor.map(lambda row: extract_payload_for_row(row, packet_cache), [row for _, row in df.iterrows()]))
+
+    #     if len(results) != len(df):
+    #         raise ValueError("Mismatch between the number of results and DataFrame rows")
+    #     # Add the results as a new column to the DataFrame
+    #     df['Payload'] = results
+    # # Process the CSV and add payloads
+    # process_csv_and_add_payloads(filepcap)
+
+
+    # Hàm mới của Sang
+
+
+    # Function to format payload into a readable string
     def format_readable(data):
+        """Chuyển đổi dữ liệu bytes thành chuỗi dễ đọc (các ký tự hiển thị được)."""
         return ''.join(chr(byte) if 32 <= byte <= 126 else '.' for byte in data)
 
-    # Function to extract key information from a packet
-    def get_packet_key(packet):
+    # Function to extract TCP and UDP payloads from a PCAP file
+    def extract_payloads(pcap_file):
+        """Sử dụng TShark để trích xuất payload từ gói tin TCP và UDP."""
+        tshark_cmd = [
+            'tshark',
+            '-r', pcap_file,                # Đọc file PCAP
+            '-T', 'fields',                 # Chỉ trích xuất các trường
+            '-e', 'ip.src',                 # Địa chỉ IP nguồn
+            '-e', 'ip.dst',                 # Địa chỉ IP đích
+            '-e', 'tcp.srcport',            # Cổng nguồn TCP
+            '-e', 'tcp.dstport',            # Cổng đích TCP
+            '-e', 'udp.srcport',            # Cổng nguồn UDP
+            '-e', 'udp.dstport',            # Cổng đích UDP
+            '-e', 'tcp.payload',            # Payload TCP
+            '-e', 'udp.payload',            # Payload UDP
+            '-e', 'frame.time_epoch',       # Thời gian gói tin
+            '-E', 'separator=,'             # Sử dụng dấu phẩy để phân tách
+        ]
+
         try:
-            src_ip = packet.ip.src
-            dst_ip = packet.ip.dst
-            if 'TCP' in packet:
-                return (src_ip, dst_ip, int(packet.tcp.srcport), int(packet.tcp.dstport), 'TCP', int(packet.tcp.seq))
-            elif 'UDP' in packet:
-                return (src_ip, dst_ip, int(packet.udp.srcport), int(packet.udp.dstport), 'UDP', 0)
-        except AttributeError:
-            return None
+            # Chạy lệnh TShark và thu thập kết quả
+            tshark_output = subprocess.check_output(tshark_cmd).decode('utf-8')
 
-    # Function to cache all packets from the pcap file
-    def cache_packets(pcap_file):
-        capture = pyshark.FileCapture(pcap_file, display_filter='tcp or udp', include_raw=True, use_json=True)
-        packet_cache = []
+            tcp_payloads = []
+            udp_payloads = []
 
-        for packet in capture:
-            key = get_packet_key(packet)
-            if key:
-                # packet_time = (packet.sniff_time - timedelta(hours=7)).timestamp()  # Adjust to UTC
-                packet_time = (packet.sniff_time).timestamp()  # Adjust to UTC
-                packet_cache.append((key, packet_time, packet.get_raw_packet()))
-                print(packet.sniff_time)
+            # Phân tích kết quả từ TShark
+            for line in tshark_output.splitlines():
+                parts = line.split(',')
+                if len(parts) < 9:
+                    continue
 
-        capture.close()
-        return packet_cache
+                p_src_ip, p_dst_ip, tcp_src_port, tcp_dst_port, udp_src_port, udp_dst_port, tcp_payload, udp_payload, packet_time = parts
 
-    # Function to find payloads based on CSV row information and cached packets
-    def extract_payload_from_row(row, packet_cache):
+                # Nếu có TCP payload
+                if tcp_payload:
+                    payload_bytes = bytes.fromhex(tcp_payload)
+                    readable_payload = format_readable(payload_bytes)
+                    tcp_payloads.append((p_src_ip, p_dst_ip, tcp_src_port, tcp_dst_port, readable_payload, packet_time))
+
+                # Nếu có UDP payload
+                if udp_payload:
+                    payload_bytes = bytes.fromhex(udp_payload)
+                    readable_payload = format_readable(payload_bytes)
+                    udp_payloads.append((p_src_ip, p_dst_ip, udp_src_port, udp_dst_port, readable_payload, packet_time))
+            print(f"tcp payload: {tcp_payloads}")
+            print(f" udp payload: {udp_payloads}")
+            return tcp_payloads, udp_payloads
+
+        except subprocess.CalledProcessError as e:
+            print(f"Error running TShark: {e}")
+            return [], []
+
+    # Function to match flow from CSV with TCP/UDP payloads
+    def match_payloads(flow_row, tcp_payloads, udp_payloads):
         try:
-            start_timestamp = datetime.strptime(row['Timestamp'], '%Y/%m/%d %H:%M:%S').timestamp()
+            # Chuyển đổi thời gian với định dạng: "1/21/2022 12:11:53 AM" và cộng thêm 7 tiếng
+            print(f"Converting timestamp: {flow_row['Timestamp']}")  # In timestamp để kiểm tra
+            start_timestamp = datetime.strptime(flow_row['Timestamp'], '%Y/%m/%d %H:%M:%S').timestamp()
         except ValueError:
+            print(f"Invalid timestamp: {flow_row['Timestamp']}")
             return "Invalid timestamp"
 
-        time_delta = float(row['Time_Delta']) / 10**6 + 1.0
+        # Tính toán thời gian kết thúc của flow dựa trên Time_Delta
+        time_delta = float(flow_row['Time_Delta']) / 10**6 + 1.0
         end_timestamp = start_timestamp + time_delta
 
-        src_ip, dst_ip = row['Source IP'], row['Destination IP']
-        src_port, dst_port = int(row['Source Port']), int(row['Destination Port'])
 
-        client_to_server_payloads = []
-        server_to_client_payloads = []
-        packets_to_remove = []
+        src_ip, dst_ip = flow_row['Source IP'], flow_row['Destination IP']
+        src_port, dst_port = int(flow_row['Source Port']), int(flow_row['Destination Port'])
+        protocol = flow_row['Protocol']
 
-        for idx, (key, packet_time, payload) in enumerate(packet_cache):
-            p_src_ip, p_dst_ip, p_src_port, p_dst_port,protocol, _ = key
-            print(f"CSV Timestamp: {start_timestamp}, Packet Time: {packet_time}, Time Delta: {time_delta}")
+        if protocol == 'TCP':
+            matching_packets = [pkt for pkt in tcp_payloads if pkt[0] == src_ip and pkt[1] == dst_ip and pkt[2] == str(src_port) and pkt[3] == str(dst_port) and start_timestamp <= float(pkt[5]) <= end_timestamp]
+        elif protocol == 'UDP':
+            matching_packets = [pkt for pkt in udp_payloads if pkt[0] == src_ip and pkt[1] == dst_ip and pkt[2] == str(src_port) and pkt[3] == str(dst_port) and start_timestamp <= float(pkt[5]) <= end_timestamp]
+        else:
+            return "Unsupported protocol"
 
-            if (src_ip == p_src_ip and dst_ip == p_dst_ip and src_port == p_src_port and dst_port == p_dst_port) and (start_timestamp <= packet_time <= end_timestamp):
-                if (p_src_ip, p_src_port) == (src_ip, src_port):
-                    client_to_server_payloads.append(payload)
-                else:
-                    server_to_client_payloads.append(payload)
-
-                # Mark this packet for removal since it satisfies the current row
-                packets_to_remove.append(idx)
-
-         # Remove the packets that have already been processed
-        for idx in sorted(packets_to_remove, reverse=True):
-            if idx < len(packet_cache):
-                del packet_cache[idx]
-
-        if not client_to_server_payloads and not server_to_client_payloads:
+        if not matching_packets:
             return "No payload found for the flow"
 
-        client_payload = format_readable(b''.join(client_to_server_payloads))
-        server_payload = format_readable(b''.join(server_to_client_payloads))
+        # Ghép nối payload từ tất cả các gói tin thuộc flow
+        flow_payload = ''.join([pkt[4] for pkt in matching_packets])
+        return flow_payload
 
-        return f"Client to Server:\n{client_payload}\nServer to Client:\n{server_payload}"
-
-    # Function to handle payload extraction for parallel execution
-    def extract_payload_for_row(row, packet_cache):
-        return extract_payload_from_row(row, packet_cache)
-
-    # Main function to process the CSV and append the payloads
+    # Function to process the CSV and append the payloads
     def process_csv_and_add_payloads(pcap_file):
-        # Cache all packets from the pcap file
-        packet_cache = cache_packets(pcap_file)
-        # # Extract payloads for each row in the CSV
-        # df['Payload'] = df.apply(lambda row: extract_payload_from_row(row, packet_cache), axis=1)
-        # Create a ThreadPoolExecutor for parallel execution
-        with ThreadPoolExecutor() as executor:
-            # Use the executor to apply `extract_payload_for_row` in parallel
-            results = list(executor.map(lambda row: extract_payload_for_row(row, packet_cache), [row for _, row in df.iterrows()]))
+        # Load the CSV into a DataFrame, chỉ lấy các cột cần thiết
+        # df = pd.read_csv(csv_file, usecols=['Flow ID', 'Timestamp', 'Source IP', 'Destination IP', 'Source Port', 'Destination Port', 'Protocol', 'Time_Delta'])
 
-        if len(results) != len(df):
-            raise ValueError("Mismatch between the number of results and DataFrame rows")
-        # Add the results as a new column to the DataFrame
-        df['Payload'] = results
-    # Process the CSV and add payloads
+        # Trích xuất payload từ file PCAP
+        tcp_payloads, udp_payloads = extract_payloads(pcap_file)
+
+        # Match payload với từng dòng flow trong file CSV
+        df['Payload'] = df.apply(lambda row: match_payloads(row, tcp_payloads, udp_payloads), axis=1)
+        
+        ## Test thôi
+        # # Ghi nội dung của cột 'Payload' ra file text
+        # with open('payload_output.txt', 'w') as file:
+        #     for payload in df['Payload']:
+        #         file.write(str(payload) + '\n')  # Ghi mỗi payload trên một dòng
+
+
+        # Lưu DataFrame mới có chứa payload vào file CSV
+        # df.to_csv('traffic4_with_payload.csv', index=False)
+
+        # In nội dung DataFrame để kiểm tra
+        # print(df[['Flow ID', 'Source IP', 'Destination IP', 'Source Port', 'Destination Port', 'Protocol', 'Payload']])
+
+    # File paths
+    # pcap_file = 'traffictest4.pcap'  # Đặt tên file PCAP của bạn
+    # csv_file = 'traffictest4.pcap_Flow_processed.csv'    # Đặt tên file CSV của bạn
+
+    # Process the CSV và thêm payload vào
     process_csv_and_add_payloads(filepcap)
 
     # Đặt tên file CSV mới và lưu file
@@ -245,7 +373,7 @@ def process_csv(filepcapcsv: str,filepcap:str):
 
 # Lọc bỏ các dòng có địa chỉ MAC trong `source_ip` hoặc `destination_ip`
 # hàm này ít dùng do cơ bản là Ip rồi
-def is_ip_only(ip):
+def is_ip_only_old(ip):
     # Kiểm tra xem địa chỉ IP có chứa địa chỉ MAC hay không
     ip_pattern = re.compile(r"\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b")
     
@@ -316,31 +444,153 @@ def generate_ip_map(df):
     return ip_pairs
 
 # M2. Netgraph
+# def generate_network_graph(df):
+    # filtered_df = df[df['Source IP'].apply(is_ip_only_old) & df['Destination IP'].apply(is_ip_only_old)]
+    # ip_pairs =filtered_df[['Source IP', 'Destination IP']].drop_duplicates()
+    # ip_pairs = set(ip_pairs.itertuples(index=False, name=None))
+
+    # # Tạo một đồ thị
+    # G = nx.Graph()
+
+    # # Thêm các cạnh (edge) vào đồ thị từ các cặp IP
+    # G.add_edges_from(ip_pairs)
+
+    # # Tạo danh sách nodes và edges để trả về
+    # nodes = [{"id": node} for node in G.nodes()]
+    # edges = [{"source": source, "target": target} for source, target in G.edges()]
+
+    # # Dữ liệu trả về dưới dạng JSON
+    # graph_data = {
+    #     "nodes": nodes,
+    #     "edges": edges
+    # }
+
+    # # Trả về JSON dưới dạng chuỗi
+    # return graph_data
+
+# Hàm kiểm tra IP hợp lệ
+def is_ip_only(ip):
+    return isinstance(ip, str) and len(ip.split('.')) == 4
+
+# Hàm xác định server dựa trên địa chỉ IP
+
+
+def identify_server(ip):
+    try:
+        ip_obj = ipaddress.ip_address(ip)  # Kiểm tra định dạng IP
+    except ValueError:
+        return 'Invalid IP address'
+    
+    # Google DNS
+    if ip in ['8.8.8.8', '8.8.4.4']:
+        return 'Google DNS'
+    # Cloudflare DNS
+    elif ip in ['1.1.1.1', '1.0.0.1']:
+        return 'Cloudflare DNS'
+    
+    # Kiểm tra từng dải IP
+    server_ip_ranges = {
+    'Google DNS': ['8.8.8.8', '8.8.4.4'],
+    'Cloudflare DNS': ['1.1.1.1', '1.0.0.1'],
+    'Google': [
+        '8.8.4.0/24', '8.8.8.0/24', '8.34.208.0/20', '8.35.192.0/20', '23.236.48.0/20', 
+        '23.251.128.0/19', '34.0.0.0/15', '34.2.0.0/16', '34.3.0.0/23', '34.3.3.0/24', 
+        '34.3.4.0/24', '34.3.8.0/21', '34.3.16.0/20', '34.3.32.0/19', '34.3.64.0/18', 
+        '34.4.0.0/14', '34.8.0.0/13', '34.32.0.0/11', '34.64.0.0/10', '34.128.0.0/10', 
+        '35.184.0.0/13', '35.192.0.0/14', '35.196.0.0/15', '35.198.0.0/16', 
+        '35.199.0.0/17', '35.199.128.0/18', '35.200.0.0/13', '35.208.0.0/12', 
+        '35.224.0.0/12', '35.240.0.0/13', '57.140.192.0/18', '64.15.112.0/20', 
+        '64.233.160.0/19', '66.22.228.0/23', '66.102.0.0/20', '66.249.64.0/19', 
+        '70.32.128.0/19', '72.14.192.0/18', '74.125.0.0/16', '104.154.0.0/15', 
+        '104.196.0.0/14', '104.237.160.0/19', '107.167.160.0/19', '107.178.192.0/18', 
+        '108.59.80.0/20', '108.170.192.0/18', '108.177.0.0/17', '130.211.0.0/16', 
+        '136.22.160.0/20', '136.22.176.0/21', '136.22.184.0/23', '136.22.186.0/24', 
+        '136.124.0.0/15', '142.250.0.0/15', '146.148.0.0/17', '152.65.208.0/22', 
+        '152.65.214.0/23', '152.65.218.0/23', '152.65.222.0/23', '152.65.224.0/19', 
+        '162.120.128.0/17', '162.216.148.0/22', '162.222.176.0/21', '172.110.32.0/21', 
+        '172.217.0.0/16', '172.253.0.0/16', '173.194.0.0/16', '173.255.112.0/20', 
+        '192.158.28.0/22', '192.178.0.0/15', '193.186.4.0/24', '199.36.154.0/23', 
+        '199.36.156.0/24', '199.192.112.0/22', '199.223.232.0/21', '207.223.160.0/20', 
+        '208.65.152.0/22', '208.68.108.0/22', '208.81.188.0/22', '208.117.224.0/19', 
+        '209.85.128.0/17', '216.58.192.0/19', '216.73.80.0/20', '216.239.32.0/19',
+        '35.190.0.0/17', '35.191.0.0/16', '130.211.0.0/16', '108.177.8.0/24'  # New IP ranges
+    ],  
+    'Amazon': [
+        '13.0.0.0/8', '54.239.0.0/16', '52.94.0.0/16', '18.0.0.0/8', 
+        '52.95.0.0/16', '52.92.0.0/15', '52.94.0.0/15', '18.208.0.0/13', 
+        '54.244.0.0/16', '52.32.0.0/11', '99.82.0.0/16', '52.119.0.0/16'  # New IP ranges
+    ],
+    'AWS': [
+        '52.0.0.0/8', '3.0.0.0/8', '18.0.0.0/8', 
+        '3.128.0.0/9', '52.119.0.0/16', '99.83.0.0/16'  # New AWS IP ranges
+    ],  
+    'Apple': ['17.0.0.0/8'],  
+    'Ubuntu': ['91.189.0.0/16','54.171.0.0/16'],  
+    'GitHub': ['185.199.0.0/16', '140.82.112.0/20'],  
+    'Microsoft': [
+        '40.76.0.0/14', '104.215.0.0/16', '13.104.0.0/14', '13.107.0.0/16',
+        '52.244.0.0/16', '13.68.0.0/16', '52.229.0.0/16', '40.90.0.0/16'  # New Microsoft IP ranges
+    ],  
+    'Facebook': [
+        '31.13.24.0/21', '66.220.144.0/20', '69.63.176.0/20', 
+        '157.240.0.0/16', '129.134.0.0/16', '204.15.20.0/22'  # New Facebook IP ranges
+    ],  
+    'Oracle': [
+        '137.254.0.0/16', '156.151.0.0/16', 
+        '138.1.0.0/16', '148.64.0.0/16', '152.67.0.0/16'  # New Oracle IP ranges
+    ],  
+    'Cloudflare': [
+        '104.16.0.0/12', '172.64.0.0/13', '198.41.128.0/17', '190.93.240.0/20', 
+        '141.101.64.0/18', '188.114.96.0/20', '197.234.240.0/22'  # New Cloudflare ranges
+    ],
+    'Nemox':
+    ['83.137.0.0/16'],
+    'Stone':
+    ['211.216.0.0/16'],
+    'Linux': ['223.130.0.0/16'],
+    }
+    
+    # Kiểm tra từng server với dải IP tương ứng
+    for server, ip_ranges in server_ip_ranges.items():
+        for ip_range in ip_ranges:
+            if ip_obj in ipaddress.ip_network(ip_range):
+                return server
+    
+    return 'Unknown Server'
+# M2
+# Hàm generate_network_graph
 def generate_network_graph(df):
-    
-    
+    # Lọc các cặp IP từ DataFrame
     filtered_df = df[df['Source IP'].apply(is_ip_only) & df['Destination IP'].apply(is_ip_only)]
-    ip_pairs =filtered_df[['Source IP', 'Destination IP']].drop_duplicates()
-    ip_pairs = set(ip_pairs.itertuples(index=False, name=None))
+    
+    # Tạo cặp IP với thông tin server và label
+    ip_pairs = filtered_df[['Source IP', 'Destination IP', 'Label']].drop_duplicates()
 
-    # Tạo một đồ thị
-    G = nx.Graph()
+    # Tạo danh sách netgraph, chỉ giữ các kết nối với Source và Destination IP không phải là 'Unknown Server'
+    # Tạo danh sách netgraph, loại bỏ các kết nối có nhãn 'Normaly' và liên quan tới các IP public
+    netgraph = [{"source": row['Source IP'], "target": row['Destination IP'], "label": row['Label']} 
+                for _, row in ip_pairs.iterrows() 
+                if not ((row['Label'] == 'Normal' and (identify_server(row['Source IP']) != 'Unknown Server' or identify_server(row['Destination IP']) != 'Unknown Server'))
+                        and ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) != 'Unknown Server' and is_public_ip(row['Destination IP']) != 'Unknown Server'))))]
 
-    # Thêm các cạnh (edge) vào đồ thị từ các cặp IP
-    G.add_edges_from(ip_pairs)
+    # Tạo danh sách nettable với source, target, server, label, chỉ giữ các server hợp lệ cho cả Source và Destination
+    nettable = [{"source": row['Source IP'], 
+                 "target": row['Destination IP'],
+                 "nameserver": identify_server(row['Source IP']) if is_public_ip(row['Source IP']) 
+                 else identify_server(row['Destination IP']),
+                 "label": row['Label']} 
+                for _, row in ip_pairs.iterrows() 
+                if (is_public_ip(row['Source IP']) and not is_public_ip(row['Destination IP'] )) or
+                   (not is_public_ip(row['Source IP']) and is_public_ip(row['Destination IP']))]
 
-    # Tạo danh sách nodes và edges để trả về
-    nodes = [{"id": node} for node in G.nodes()]
-    edges = [{"source": source, "target": target} for source, target in G.edges()]
-
-    # Dữ liệu trả về dưới dạng JSON
-    graph_data = {
-        "nodes": nodes,
-        "edges": edges
+    # Dữ liệu trả về
+    result = {
+        "netgraph": netgraph,
+        "nettable": nettable
     }
 
-    # Trả về JSON dưới dạng chuỗi
-    return graph_data
+    return result
+
 
 
     
@@ -692,7 +942,7 @@ def alert_general(df):
 def bar_alert_categories(df):
     # Đếm số lượng theo nhãn Label
     label_counts = df['Label'].value_counts()
-    print (f"label_counts:{label_counts}")
+    # print (f"label_counts:{label_counts}")
     # Chuyển đổi thành dạng danh sách với cặp name-uv
     result = [{"name": label, "uv": str(count)} for label, count in label_counts.items()]
     return result
@@ -719,7 +969,7 @@ def bar_alert_generating_hosts(df):
     ip_counts = public_ips.value_counts()
     
     # Chuyển đổi thành danh sách các từ điển có định dạng như bạn muốn
-    result_list = [{'name': ip,'uv': str(count)} for count, ip  in ip_counts.items()]
+    result_list = [{'name': ip,'uv': str(count)} for ip,count in ip_counts.items()]
     
     return result_list
 
@@ -745,7 +995,7 @@ def bar_alert_receiving_hosts(df):
     ip_counts = private_ips.value_counts()
     
     # Chuyển đổi thành danh sách các từ điển có định dạng như bạn muốn
-    result_list = [{'name': ip,'uv': str(count)} for count, ip  in ip_counts.items()]
+    result_list = [{'name': ip,'uv': str(count)} for ip,count  in ip_counts.items()]
     
     return result_list
 

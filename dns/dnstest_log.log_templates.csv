@@ -1,0 +1,6 @@
+EventId,EventTemplate,Occurrences
+40f8343b,query[A] <*> from <*>,12
+bef4b736,forwarded <*> to <*>,16
+a1c209ec,reply <*> is <*>,18
+614e0e47,query[TXT] current.cvd.clamav.net from <*>,2
+ac9e4dd7,query[AAAA] db.local.clamav.net from <*>,2

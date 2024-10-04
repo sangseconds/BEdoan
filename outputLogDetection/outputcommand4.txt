@@ -1,0 +1,1060 @@
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642825021.736:376): pid=20515 uid=0 auid=0 ses=58 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642825021.744:378): pid=20515 uid=0 auid=0 ses=58 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642828621.792:379): pid=20529 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642828621.792:380): pid=20529 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642828621.796:382): pid=20529 uid=0 auid=0 ses=59 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642828621.804:383): pid=20529 uid=0 auid=0 ses=59 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642828621.804:384): pid=20529 uid=0 auid=0 ses=59 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642832221.851:386): pid=20549 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642832221.863:389): pid=20549 uid=0 auid=0 ses=60 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642832221.863:390): pid=20549 uid=0 auid=0 ses=60 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642832701.878:392): pid=20555 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642832713.446:395): pid=20555 uid=0 auid=0 ses=61 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642832713.446:396): pid=20555 uid=0 auid=0 ses=61 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642834522.129:399): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642834522.129:400): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642835221.473:402): pid=20825 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642835221.509:405): pid=20825 uid=0 auid=0 ses=62 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642835221.509:406): pid=20825 uid=0 auid=0 ses=62 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642843021.625:419): pid=20858 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642843021.625:420): pid=20858 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642843021.629:422): pid=20858 uid=0 auid=0 ses=65 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642843021.637:424): pid=20858 uid=0 auid=0 ses=65 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642846621.680:425): pid=20868 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642846621.684:426): pid=20868 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642846621.688:428): pid=20868 uid=0 auid=0 ses=66 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642846621.696:429): pid=20868 uid=0 auid=0 ses=66 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642846621.696:430): pid=20868 uid=0 auid=0 ses=66 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642850221.807:432): pid=20890 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642850221.871:435): pid=20890 uid=0 auid=0 ses=67 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642850221.871:436): pid=20890 uid=0 auid=0 ses=67 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642850898.897:438): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642853821.915:439): pid=20922 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642853821.919:440): pid=20922 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642853821.919:442): pid=20922 uid=0 auid=0 ses=68 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642853821.927:443): pid=20922 uid=0 auid=0 ses=68 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642853821.927:444): pid=20922 uid=0 auid=0 ses=68 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642855711.137:446): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642857421.973:447): pid=21385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642857421.973:448): pid=21385 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642857421.977:450): pid=21385 uid=0 auid=0 ses=69 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642857421.985:451): pid=21385 uid=0 auid=0 ses=69 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642857421.985:452): pid=21385 uid=0 auid=0 ses=69 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642861021.027:454): pid=21400 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642861021.039:457): pid=21400 uid=0 auid=0 ses=70 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642861021.039:458): pid=21400 uid=0 auid=0 ses=70 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642864621.089:460): pid=21414 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642864621.101:463): pid=21414 uid=0 auid=0 ses=71 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642864621.101:464): pid=21414 uid=0 auid=0 ses=71 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642871821.223:471): pid=21463 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642871821.223:472): pid=21463 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642871821.235:474): pid=21463 uid=0 auid=0 ses=73 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642871821.255:476): pid=21463 uid=0 auid=0 ses=73 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642875421.293:477): pid=21477 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642875421.293:478): pid=21477 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642875421.297:480): pid=21477 uid=0 auid=0 ses=74 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642875421.301:482): pid=21477 uid=0 auid=0 ses=74 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642879021.348:483): pid=21491 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642879021.348:484): pid=21491 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642879021.352:486): pid=21491 uid=0 auid=0 ses=75 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642879021.356:487): pid=21491 uid=0 auid=0 ses=75 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642879021.356:488): pid=21491 uid=0 auid=0 ses=75 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642882621.398:490): pid=21505 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642882621.410:493): pid=21505 uid=0 auid=0 ses=76 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642882621.410:494): pid=21505 uid=0 auid=0 ses=76 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642891520.374:507): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642891520.374:508): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642897021.618:515): pid=21614 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642897021.618:516): pid=21614 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642897021.618:518): pid=21614 uid=0 auid=0 ses=80 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642897021.642:520): pid=21614 uid=0 auid=0 ses=80 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642899421.672:521): pid=21623 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642899421.676:522): pid=21623 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642899421.676:524): pid=21623 uid=0 auid=0 ses=81 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642899421.992:526): pid=21623 uid=0 auid=0 ses=81 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642900622.010:527): pid=21631 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642900622.010:528): pid=21631 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642904221.068:533): pid=21643 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642904221.068:534): pid=21643 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642904221.072:536): pid=21643 uid=0 auid=0 ses=83 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642904221.080:537): pid=21643 uid=0 auid=0 ses=83 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642904221.080:538): pid=21643 uid=0 auid=0 ses=83 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642906821.786:539): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642906821.786:540): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642907821.122:541): pid=21709 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642907821.122:542): pid=21709 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642907821.122:544): pid=21709 uid=0 auid=0 ses=84 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642907821.130:545): pid=21709 uid=0 auid=0 ses=84 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642907821.130:546): pid=21709 uid=0 auid=0 ses=84 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642911421.168:547): pid=21727 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642911421.168:548): pid=21727 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642911421.176:550): pid=21727 uid=0 auid=0 ses=85 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642911421.184:551): pid=21727 uid=0 auid=0 ses=85 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642911421.184:552): pid=21727 uid=0 auid=0 ses=85 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642911870.859:553): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642911870.859:554): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642915021.226:555): pid=22190 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642915021.230:556): pid=22190 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642915021.234:558): pid=22190 uid=0 auid=0 ses=86 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642915021.242:559): pid=22190 uid=0 auid=0 ses=86 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642915021.242:560): pid=22190 uid=0 auid=0 ses=86 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642918525.521:561): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642918525.521:562): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642918621.283:563): pid=22304 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642918621.287:564): pid=22304 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642918621.287:566): pid=22304 uid=0 auid=0 ses=87 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642918621.295:567): pid=22304 uid=0 auid=0 ses=87 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642918621.295:568): pid=22304 uid=0 auid=0 ses=87 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642919101.306:570): pid=22309 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642919106.550:573): pid=22309 uid=0 auid=0 ses=88 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642919106.550:574): pid=22309 uid=0 auid=0 ses=88 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642922221.269:587): pid=22452 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642922221.269:588): pid=22452 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642922221.269:590): pid=22452 uid=0 auid=0 ses=91 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642922221.277:592): pid=22452 uid=0 auid=0 ses=91 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642925821.319:593): pid=22468 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642925821.319:594): pid=22468 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642925821.323:596): pid=22468 uid=0 auid=0 ses=92 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642925821.331:598): pid=22468 uid=0 auid=0 ses=92 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642929421.372:599): pid=22481 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642929421.372:600): pid=22481 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642929421.376:602): pid=22481 uid=0 auid=0 ses=93 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642929421.384:603): pid=22481 uid=0 auid=0 ses=93 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642929421.384:604): pid=22481 uid=0 auid=0 ses=93 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642933021.421:605): pid=22493 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642933021.421:606): pid=22493 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642933021.421:608): pid=22493 uid=0 auid=0 ses=94 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642933021.429:610): pid=22493 uid=0 auid=0 ses=94 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642933159.648:611): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642933159.648:612): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642936621.475:613): pid=22586 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642936621.475:614): pid=22586 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642936621.475:616): pid=22586 uid=0 auid=0 ses=95 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642936621.483:618): pid=22586 uid=0 auid=0 ses=95 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642937358.835:619): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642937358.839:620): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642940878.085:627): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642940878.085:628): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642947421.639:635): pid=22706 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642947421.639:636): pid=22706 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642947421.643:638): pid=22706 uid=0 auid=0 ses=98 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642947421.651:640): pid=22706 uid=0 auid=0 ses=98 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642951021.688:641): pid=22724 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642951021.688:642): pid=22724 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642951021.692:644): pid=22724 uid=0 auid=0 ses=99 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642951021.696:646): pid=22724 uid=0 auid=0 ses=99 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642954621.742:647): pid=22739 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642954621.742:648): pid=22739 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642954621.742:650): pid=22739 uid=0 auid=0 ses=100 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642954621.754:651): pid=22739 uid=0 auid=0 ses=100 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642954621.754:652): pid=22739 uid=0 auid=0 ses=100 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642958221.799:654): pid=22756 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642958221.835:657): pid=22756 uid=0 auid=0 ses=101 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642958221.835:658): pid=22756 uid=0 auid=0 ses=101 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1642966220.746:671): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642966220.746:672): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642969021.986:676): pid=22883 uid=0 auid=0 ses=104 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642972621.042:679): pid=22895 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642972621.042:680): pid=22895 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642972621.046:682): pid=22895 uid=0 auid=0 ses=105 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642972621.054:683): pid=22895 uid=0 auid=0 ses=105 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642976221.104:685): pid=22907 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642976221.108:686): pid=22907 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642976221.112:688): pid=22907 uid=0 auid=0 ses=106 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642976221.116:690): pid=22907 uid=0 auid=0 ses=106 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642979821.161:691): pid=22920 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642979821.161:692): pid=22920 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642979821.169:694): pid=22920 uid=0 auid=0 ses=107 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642979821.173:695): pid=22920 uid=0 auid=0 ses=107 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642979821.177:696): pid=22920 uid=0 auid=0 ses=107 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1642982418.694:698): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=fstrim comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642983421.219:699): pid=22947 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642983421.219:700): pid=22947 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642983421.219:702): pid=22947 uid=0 auid=0 ses=108 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642983421.231:703): pid=22947 uid=0 auid=0 ses=108 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642983421.231:704): pid=22947 uid=0 auid=0 ses=108 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642987021.269:706): pid=22960 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1642987021.277:709): pid=22960 uid=0 auid=0 ses=109 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642987021.277:710): pid=22960 uid=0 auid=0 ses=109 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642994221.368:717): pid=22993 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642994221.368:718): pid=22993 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642994221.372:720): pid=22993 uid=0 auid=0 ses=111 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642994221.376:722): pid=22993 uid=0 auid=0 ses=111 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1642997821.415:723): pid=23011 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1642997821.415:724): pid=23011 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1642997821.419:726): pid=23011 uid=0 auid=0 ses=112 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1642997821.431:728): pid=23011 uid=0 auid=0 ses=112 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643001421.468:729): pid=23025 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643001421.468:730): pid=23025 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643001421.472:732): pid=23025 uid=0 auid=0 ses=113 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643001421.476:733): pid=23025 uid=0 auid=0 ses=113 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643001421.476:734): pid=23025 uid=0 auid=0 ses=113 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643005021.515:736): pid=23037 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643005021.527:739): pid=23037 uid=0 auid=0 ses=114 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643005021.527:740): pid=23037 uid=0 auid=0 ses=114 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1643006243.028:747): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1643006243.028:748): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily-upgrade comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643008021.271:750): pid=23255 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643008021.283:753): pid=23255 uid=0 auid=0 ses=116 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643008021.283:754): pid=23255 uid=0 auid=0 ses=116 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643008621.300:758): pid=23260 uid=0 auid=0 ses=117 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643012221.350:761): pid=23273 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643012221.350:762): pid=23273 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643012221.350:764): pid=23273 uid=0 auid=0 ses=118 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643012221.362:765): pid=23273 uid=0 auid=0 ses=118 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643012221.362:766): pid=23273 uid=0 auid=0 ses=118 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643015821.404:767): pid=23287 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643015821.408:770): pid=23287 uid=0 auid=0 ses=119 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643015821.416:771): pid=23287 uid=0 auid=0 ses=119 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643015821.416:772): pid=23287 uid=0 auid=0 ses=119 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643019421.454:773): pid=23304 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643019421.458:774): pid=23304 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643019421.466:777): pid=23304 uid=0 auid=0 ses=120 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643019421.466:778): pid=23304 uid=0 auid=0 ses=120 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1643021659.368:779): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1643021659.368:780): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=motd-news comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643023021.513:781): pid=23363 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643023021.521:784): pid=23363 uid=0 auid=0 ses=121 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643023021.525:785): pid=23363 uid=0 auid=0 ses=121 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643023021.525:786): pid=23363 uid=0 auid=0 ses=121 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1643023818.883:787): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1643023818.883:788): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=systemd-tmpfiles-clean comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643026621.563:789): pid=23398 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643026621.567:792): pid=23398 uid=0 auid=0 ses=122 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643026621.575:793): pid=23398 uid=0 auid=0 ses=122 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643026621.575:794): pid=23398 uid=0 auid=0 ses=122 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1643029652.100:795): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1643029652.100:796): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643030221.613:797): pid=23861 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643030221.617:800): pid=23861 uid=0 auid=0 ses=123 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643030221.625:801): pid=23861 uid=0 auid=0 ses=123 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643030221.625:802): pid=23861 uid=0 auid=0 ses=123 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643033821.671:803): pid=23871 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643033821.675:806): pid=23871 uid=0 auid=0 ses=124 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643033821.687:807): pid=23871 uid=0 auid=0 ses=124 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643033821.687:808): pid=23871 uid=0 auid=0 ses=124 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643037421.728:809): pid=23883 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643037421.732:810): pid=23883 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643037421.736:812): pid=23883 uid=0 auid=0 ses=125 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643041021.781:815): pid=23897 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643041021.785:818): pid=23897 uid=0 auid=0 ses=126 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643041021.793:819): pid=23897 uid=0 auid=0 ses=126 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643041021.793:820): pid=23897 uid=0 auid=0 ses=126 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643044621.839:821): pid=23910 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643044621.847:824): pid=23910 uid=0 auid=0 ses=127 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643044621.851:825): pid=23910 uid=0 auid=0 ses=127 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643044621.851:826): pid=23910 uid=0 auid=0 ses=127 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643048221.897:827): pid=23923 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643048221.901:830): pid=23923 uid=0 auid=0 ses=128 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643048221.909:831): pid=23923 uid=0 auid=0 ses=128 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643048221.909:832): pid=23923 uid=0 auid=0 ses=128 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643051821.954:833): pid=23936 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643051821.958:834): pid=23936 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643051821.966:837): pid=23936 uid=0 auid=0 ses=129 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643051821.966:838): pid=23936 uid=0 auid=0 ses=129 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643055421.017:839): pid=23952 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643055421.017:840): pid=23952 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_START msg=audit(1643055421.017:842): pid=23952 uid=0 auid=0 ses=130 msg='op=PAM:session_open acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_START msg=audit(1643057839.697:845): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=SERVICE_STOP msg=audit(1643057839.697:846): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=apt-daily comm="systemd" exe="/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643059021.063:847): pid=24043 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643059021.063:848): pid=24043 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_DISP msg=audit(1643059021.075:851): pid=24043 uid=0 auid=0 ses=131 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_END msg=audit(1643059021.075:852): pid=24043 uid=0 auid=0 ses=131 msg='op=PAM:session_close acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=USER_ACCT msg=audit(1643062621.129:853): pid=24055 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:accounting acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+
+2024-09-26 16:56:28 New character(s) detected
+CharsetDetector: "audit_CD" (1 lines)
+  type=CRED_ACQ msg=audit(1643062621.129:854): pid=24055 uid=0 auid=4294967295 ses=4294967295 msg='op=PAM:setcred acct="root" exe="/usr/sbin/cron" hostname=? addr=? terminal=cron res=success'
+

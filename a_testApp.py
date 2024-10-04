@@ -106,8 +106,6 @@ def stop_if_no_change(output_command_name: str, process, interval: int = 10, max
         process.wait()
 
 
-output_counter = get_next_counter_value()
-
 
 
 def generate_network_matrix(df):
@@ -143,7 +141,7 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
     global log_dir
     global log_filename
     global label_df
-    global output_counter
+    output_counter = get_next_counter_value()
     network_filename=file.filename
     file_location = f"/home/vothuonghd1998/database/{file.filename}"
     file_output = f"/home/vothuonghd1998/database/"
@@ -160,19 +158,16 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
     # os.remove(file_location)
     global_df = read_csv_to_dataframe(csv_file_location)
     global_df = predict_anomalies(global_df)
-    
-    selected_columns = ['Src IP', 'Src Port', 'Dst IP', 'Dst Port', 'Protocol', 'Timestamp', 'Flow Duration', 'Label']
-    # global_df_show = global_df[selected_columns]
+
     label_df = global_df['Label']
-    
-    # network_matrix = generate_network_matrix(global_df)
+    conference_df =global_df['Conference'] 
     network_dir = csv_file_location
-    # results.append({"network_matrix": network_matrix})
+
 
     # Process CSV and add to results
     try:
         global_df = process_csv(network_dir,file_location)
-        combined_df = pd.concat([global_df, label_df], axis=1)
+        combined_df = pd.concat([global_df, conference_df, label_df], axis=1)
         results.append(combined_df.to_dict(orient='records'))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing CSV file: {str(e)}")
@@ -184,7 +179,7 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
 
     # Generate network graph and add to results
     try:
-        graph_data = generate_network_graph(global_df)
+        graph_data = generate_network_graph(combined_df)
         results.append(graph_data)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -329,7 +324,7 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         # Lấy các giá trị duy nhất
         unique_values = sorted(list(set(anomaly_hours.values())))
         # Kiểm tra lại sau khi thao tác
-        print("Traffic Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
+        # print("Traffic Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
         results.append(unique_values)   
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -410,7 +405,7 @@ async def traffic(
 
 
 def modify_config_and_run(file_location: str, output_command_name: str):
-    global output_counter
+    # global output_counter
     yml_dir = f"yml"
     os.makedirs(yml_dir, exist_ok=True)
     random_filename = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8)) + ".yml"
@@ -429,8 +424,19 @@ def modify_config_and_run(file_location: str, output_command_name: str):
         yaml.dump(config_content, config_file, default_flow_style=False, sort_keys=False)
     
     command = f"sudo aminer -c {config_path} >> {output_command_name}"
+    print(command)
     aminer_process = subprocess.Popen(command, shell=True)
-    
+
+    try:
+        # Chờ tiến trình hoàn thành trong khoảng thời gian timeout (60 giây)
+        aminer_process.wait(timeout=60)
+    except subprocess.TimeoutExpired:
+        # Nếu quá thời gian, dừng tiến trình
+        print("Timeout reached. Terminating the process...")
+        aminer_process.terminate()
+        aminer_process.wait()
+
+
     return config_path, yml_dir, aminer_process
 
 
@@ -438,13 +444,18 @@ def modify_config_and_run(file_location: str, output_command_name: str):
 @app.post("/log/upload_and_process/",response_class=JSONResponse)
 async def upload_and_process_file(file: UploadFile = File(...),start_time: Optional[str] = None, end_time: Optional[str] = None, time_sign = "min", db: Session = Depends(get_db)):
     # global structured_log_df, templates_log_df, log_dir, log_filename, output_counter
-    global output_counter 
+    output_counter = get_next_counter_value()
     file_location = f"/home/vothuonghd1998/database/{file.filename}"
     file_output = f"/home/vothuonghd1998/database/"
     log_filename=file.filename
     try:
-        with open(file_location, "wb+") as file_object:
-            file_object.write(file.file.read())
+        # Đọc nội dung file và xử lý dữ liệu trước khi lưu
+        file_content = file.file.read().decode('utf-8')  # Đọc nội dung và decode về định dạng chuỗi
+        file_content = file_content.replace('\r\n', '\n')  # Chuyển đổi CRLF (Windows) thành LF (Linux)
+
+        # Lưu file đã xử lý ký tự xuống dòng
+        with open(file_location, "w", encoding='utf-8') as file_object:
+            file_object.write(file_content)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error saving file: {str(e)}")
 
@@ -460,18 +471,108 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
     
     with open(output_command_name, "r") as f:
         command_results = f.readlines()
-        
+
+
     with open(file_location, "r") as infile:
         uploaded_file_content = infile.readlines()
 
     data = {'Line': uploaded_file_content}
     df = pd.DataFrame(data)
     df['Line_cleaned'] = df['Line'].str.strip()
-    command_results_cleaned = [line.strip() for line in command_results]
-    df['Anomaly'] = df['Line_cleaned'].apply(lambda x: 'Anomaly' if x in command_results_cleaned else 'Normal')
+    # command_results_cleaned = [line.strip() for line in command_results]
+    # df['Anomaly'] = df['Line_cleaned'].apply(lambda x: 'Anomaly' if x in command_results_cleaned else 'Normal')
     
+    # label_df=df['Anomaly']
+    # Xử lý kết quả command (loại bỏ \r và khoảng trắng không mong muốn)
+    command_results_cleaned = [line.strip().replace('\r', '') for line in command_results]
+
+    # Lưu các chuỗi nằm trong b'' và các chuỗi sau dấu ':' để kiểm tra
+#     anomaly_strings = []
+#     # Tìm các chuỗi nằm trong dấu '' sau dấu :
+#     # Tìm các cặp chuỗi nằm trong dấu '' trong output
+#   # Lưu cặp chuỗi nếu tìm thấy đủ 2 chuỗi
+
+#     # Gắn nhãn Anomaly nếu dòng log chứa cả 2 chuỗi trong một cặp
+#     def check_anomaly(log_line):
+#     # Kiểm tra toàn bộ dòng log trước
+#         if log_line in command_results_cleaned:
+#             return 'Anomaly'
+
+#         # Nếu không phải toàn bộ dòng, kiểm tra các mẫu cụ thể
+
+#         # Mẫu 1: Tìm chuỗi sau dấu ':', không có b
+#         pattern_1 = re.compile(r":\s*'([^']*)'")
+#         matches_1 = pattern_1.findall(log_line)
+#         if matches_1 and any(match in log_line for match in matches_1):
+#             return 'Anomaly'
+
+#         # Mẫu 2: Tìm số phía trước và chuỗi sau dấu b''
+#         pattern_2 = re.compile(r"\((\d+),\s*b'([^']*)'")
+#         matches_2 = pattern_2.findall(log_line)
+#         if matches_2:
+#             for num, string in matches_2:
+#                 if num in log_line and string in log_line:
+#                     return 'Anomaly'
+
+#         # Mẫu 3: Tìm cặp chuỗi trong dấu b''
+#         pattern_3 = re.compile(r"b'([^']*)',\s*b'([^']*)'")
+#         matches_3 = pattern_3.findall(log_line)
+#         if matches_3:
+#             for string1, string2 in matches_3:
+#                 if string1 in log_line and string2 in log_line:
+#                     return 'Anomaly'
+
+#         # Mẫu 4: Tìm chuỗi số, nối với khoảng trắng
+#         pattern_4 = re.compile(r"\((\d+),\s*(\d+)\)")
+#         matches_4 = pattern_4.findall(log_line)
+#         if matches_4:
+#             for num1, num2 in matches_4:
+#                 if f"{num1} {num2}" in log_line:
+#                     return 'Anomaly'
+
+#         return 'Normal'
+    unique_values = set()
+
+    # Duyệt qua từng dòng trong kết quả command để kiểm tra các mẫu và lưu giá trị
+    for line in command_results_cleaned:
+        # Kiểm tra định dạng (404, 360)
+        match_404_360 = re.match(r'\((\d+), (\d+)\)', line)
+        if match_404_360:
+            unique_values.add(f"{match_404_360.group(1)} {match_404_360.group(2)}")
+            continue
+
+        # Kiểm tra định dạng {'/model/model/fm/request/request': '/nmaplowercheck1642996621'}
+        # match_dict = re.search(r"\'[^\']*\':\s*\'([^\']*)\'", line)
+        # if match_dict:
+        #     unique_values.add(f"{ match_dict.group(1) }")
+        #     continue
+
+        # Kiểm tra định dạng (2886960046, b'Mozilla/5.0...')
+        match_mozilla = re.match(r'\((\d+),\s*b\'([^\']*)\'\)', line)
+        if match_mozilla:
+            unique_values.add(f"{ match_mozilla.group(2) }")
+            unique_values.add(f"{ match_mozilla.group(1) }")
+            continue
+
+        # Kiểm tra định dạng (b'-', b'/nmaplowercheck1642996621')
+        match_nmaplower = re.match(r'\(b\'-\',\s*b\'([^\']*)\'\)', line)
+        if match_nmaplower:
+            unique_values.add(f"{ match_nmaplower.group(1) }")
+
+    # Chuyển set thành danh sách không trùng lặp
+    unique_values_list = list(unique_values)
+
+    # Hàm kiểm tra Anomaly dựa trên unique_values_list
+    def check_anomaly(log_line):
+        # Kiểm tra nếu bất kỳ giá trị nào trong unique_values_list có trong dòng log
+        if any(val in log_line for val in unique_values_list) or any(log_line in line for line in command_results_cleaned):
+            return 'Anomaly'
+        return 'Normal'
+
+
+    # Áp dụng hàm check_anomaly lên các dòng log
+    df['Anomaly'] = df['Line_cleaned'].apply(check_anomaly)
     label_df=df['Anomaly']
-    
     # os.remove(config_filename)
     # os.remove(output_command_name)
     log_dir=file_output
@@ -552,15 +653,14 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         results.append(unique_values)
 
 # ALert
-# M1Alert. Thông tin chung
-        result = log_alert_general(structured_log_df)
-        results.append(result)
+
 #M2Alert. Thông tin sự kiện theo loại bất thường
         result = log_bar_alert_categories(structured_log_df)
         results.append(result)
 
-
-        # return JSONResponse(content=results)
+# M1Alert. Thông tin chung
+        result = log_alert_general(structured_log_df)
+        results.append(result)
 
         ## Audit
 
@@ -644,12 +744,15 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         results.append(unique_values)
 
 # ALert
-# M1Alert.Thông tin chung
-        result = log_alert_general(structured_log_df)
-        results.append(result)
+
 #M2Alert. Thông tin sự kiện theo loại bất thường
         result = log_bar_alert_categories(structured_log_df)
         results.append(result)
+
+# M1Alert.Thông tin chung
+        result = log_alert_general(structured_log_df)
+        results.append(result)
+
 
     elif log_type == "access":
         # Nếu log_type là "acccess", xử lý và vẽ biểu đồ
@@ -727,12 +830,14 @@ async def upload_and_process_file(file: UploadFile = File(...),start_time: Optio
         print("Access Các ngày/giờ có sự kiện Anomaly là 'Anomaly':", unique_values)
         results.append(unique_values)
 
-# ALert
-# Thông tin chung M1
-        result = log_alert_general(structured_log_df)
-        results.append(result)
-#Thông tin sự kiện theo loại bất thường
+
+#M2Alert. Thông tin sự kiện theo loại bất thường
         result = log_bar_alert_categories(structured_log_df)
+        results.append(result)
+
+# M1Alert     
+#        Thông tin chung M1
+        result = log_alert_general(structured_log_df)
         results.append(result)
 
         # return JSONResponse(content=results)

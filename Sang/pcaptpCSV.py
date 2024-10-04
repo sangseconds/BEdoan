@@ -13,9 +13,13 @@ import numpy as np
 # MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/SKGB_10.pkl"
 # MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/CB_10.pkl"
 # MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/XGB_10.pkl"
-MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/modelCLFCICnew.pkl"
+# MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/modelCLFCICnew.pkl"
+# MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/modelCLFCICnew_NewData.pkl"
+# MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/modelCLFCICnew_NewData_deep58.pkl"
+MODEL_PATH = "/home/vothuonghd1998/BEdoan/Sang/modelCLFCICnew_NewData_deep58_3.pkl"
 
-sc=joblib.load("/home/vothuonghd1998/BEdoan/Sang/scalerCIC.pkl")
+# sc=joblib.load("/home/vothuonghd1998/BEdoan/Sang/scalerCIC.pkl")
+sc=joblib.load("/home/vothuonghd1998/BEdoan/Sang/scalerCIC_NewData.pkl")
 
 # Load mô hình ngay khi import module
 
@@ -78,24 +82,35 @@ def predict_anomalies(df: pd.DataFrame) -> pd.DataFrame:
     df["time"] = df["Timestamp"].dt.hour * 3600 + df["Timestamp"].dt.minute * 60 + df["Timestamp"].dt.second
 
     # Chỉ lấy các cột cần thiết để dự đoán
-    features = ['Src Port', 'Flow Duration', 'Bwd Pkt Len Min', 'Flow Pkts/s', 
-                'Flow IAT Mean', 'Flow IAT Max', 'Bwd IAT Tot', 
-                'Bwd Pkts/s', 'Pkt Len Min', 'Pkt Len Std']
-    X = df[features]
+    # features = ['Src Port', 'Flow Duration', 'Bwd Pkt Len Min', 'Flow Pkts/s', 
+    #             'Flow IAT Mean', 'Flow IAT Max', 'Bwd IAT Tot', 
+    #             'Bwd Pkts/s', 'Pkt Len Min', 'Pkt Len Std']
+    # X = df[features]
 
-    featurenew = [
-    'Dst Port', 'Protocol', 'Flow Duration', 'Tot Fwd Pkts', 'Tot Bwd Pkts', 
-    'TotLen Fwd Pkts', 'TotLen Bwd Pkts', 'Fwd Pkt Len Std', 'Bwd Pkt Len Std', 
-    'Flow Byts/s', 'Flow Pkts/s', 'Flow IAT Std', 'Fwd IAT Std', 'Bwd IAT Std', 
-    'Fwd PSH Flags', 'Fwd Header Len', 'Bwd Header Len', 'Fwd Pkts/s', 
-    'Bwd Pkts/s', 'Pkt Len Std', 'FIN Flag Cnt', 'SYN Flag Cnt', 'RST Flag Cnt', 
-    'PSH Flag Cnt', 'ACK Flag Cnt', 'URG Flag Cnt', 'ECE Flag Cnt', 
-    'Down/Up Ratio', 'Pkt Size Avg', 'Fwd Seg Size Avg', 'Bwd Seg Size Avg', 
-    'Subflow Fwd Pkts', 'Subflow Fwd Byts', 'Subflow Bwd Pkts', 'Subflow Bwd Byts', 
-    'Init Fwd Win Byts', 'Init Bwd Win Byts', 'Fwd Act Data Pkts', 'Fwd Seg Size Min', 
-    'Active Std', 'Idle Std', 'time'
-    ]
-    X_new = df[featurenew]
+    # featurenew = [
+    # 'Dst Port', 'Protocol', 'Flow Duration', 'Tot Fwd Pkts', 'Tot Bwd Pkts', 
+    # 'TotLen Fwd Pkts', 'TotLen Bwd Pkts', 'Fwd Pkt Len Std', 'Bwd Pkt Len Std', 
+    # 'Flow Byts/s', 'Flow Pkts/s', 'Flow IAT Std', 'Fwd IAT Std', 'Bwd IAT Std', 
+    # 'Fwd PSH Flags', 'Fwd Header Len', 'Bwd Header Len', 'Fwd Pkts/s', 
+    # 'Bwd Pkts/s', 'Pkt Len Std', 'FIN Flag Cnt', 'SYN Flag Cnt', 'RST Flag Cnt', 
+    # 'PSH Flag Cnt', 'ACK Flag Cnt', 'URG Flag Cnt', 'ECE Flag Cnt', 
+    # 'Down/Up Ratio', 'Pkt Size Avg', 'Fwd Seg Size Avg', 'Bwd Seg Size Avg', 
+    # 'Subflow Fwd Pkts', 'Subflow Fwd Byts', 'Subflow Bwd Pkts', 'Subflow Bwd Byts', 
+    # 'Init Fwd Win Byts', 'Init Bwd Win Byts', 'Fwd Act Data Pkts', 'Fwd Seg Size Min', 
+    # 'Active Std', 'Idle Std', 'time'
+    # ]
+
+    X_new_feature = [
+    'Src Port', 'Dst Port', 'Protocol', 'Flow Duration', 'Tot Fwd Pkts', 'Tot Bwd Pkts',
+    'TotLen Fwd Pkts', 'TotLen Bwd Pkts', 'Fwd Pkt Len Std', 'Bwd Pkt Len Std', 'Flow Byts/s',
+    'Flow Pkts/s', 'Flow IAT Std', 'Fwd IAT Std', 'Bwd IAT Std', 'Bwd PSH Flags', 'Fwd Header Len',
+    'Bwd Header Len', 'Fwd Pkts/s', 'Bwd Pkts/s', 'Pkt Len Std', 'FIN Flag Cnt', 'SYN Flag Cnt',
+    'RST Flag Cnt', 'PSH Flag Cnt', 'ACK Flag Cnt', 'Down/Up Ratio', 'Pkt Size Avg',
+    'Fwd Seg Size Avg', 'Bwd Seg Size Avg', 'Subflow Fwd Pkts', 'Subflow Fwd Byts', 'Subflow Bwd Pkts',
+    'Subflow Bwd Byts', 'Fwd Act Data Pkts', 'Active Std', 'Idle Std', 'time'
+]
+
+    X_new = df[X_new_feature]
     # Giả sử X_new là DataFrame
     X_new.replace([np.inf, -np.inf], np.nan, inplace=True)
 
@@ -104,37 +119,17 @@ def predict_anomalies(df: pd.DataFrame) -> pd.DataFrame:
     # Dự đoán với mô hình RandomForest
     # predictions = model.predict(X)
     X_dataprediction=sc.transform(X_new)
+    # X_dataprediction=X_new
     predictions = model.predict(X_dataprediction)
+    conferren_score=model.predict_proba(X_dataprediction)
 
     # Cập nhật cột Label dựa trên dự đoán
     df['Label'] = ['Normal' if pred == 0 else 'Anomaly' for pred in predictions]
     df1['Label']=df['Label']
+    df['Conference'] = [float(conferrnescore[1]) for conferrnescore in conferren_score]
+    df1['Conference'] = df['Conference']
+    print(df['Conference'].dtype)
+    print(conferren_score)
+
     return df1
 
-# def main():
-#     # Đường dẫn tới file .pcap mà bạn muốn kiểm tra
-#     pcap_file_path = "/home/vothuonghd1998/database/log.pcap.1643023053"
-#     output_dir = "/home/vothuonghd1998/database"
-    
-#     # Bước 1: Chuyển đổi file .pcap sang .csv
-#     csv_file_path = convert_pcap_to_csv(pcap_file_path, output_dir)
-    
-#     # Bước 2: Đọc dữ liệu từ file CSV vào DataFrame
-#     df = read_csv_to_dataframe(csv_file_path)
-    
-#     # Bước 3: Dự đoán và cập nhật cột Label
-#     df = predict_anomalies(df)
-    
-#     # Bước 4: Chỉ chọn các cột cần thiết để hiển thị
-#     # selected_columns = ['Src IP', 'Src Port', 'Dst IP', 'Dst Port', 'Protocol', 'Timestamp', 'Flow Duration', 'Label']
-#     selected_columns = ['Label']
-    
-#     df = df[selected_columns]
-#     output_file_path = os.path.join(output_dir, "output.txt")
-#     df.to_string(buf=open(output_file_path, 'w'), index=False)
-    
-#     # Bước 5: In kết quả ra màn hình
-#     print(df.head(1000))  # In ra 5 dòng đầu tiên của kết quả
-
-# if __name__ == "__main__":
-#     main()

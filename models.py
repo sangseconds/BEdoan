@@ -58,3 +58,4 @@ class Log(Base):
     m10 = Column(JSON)
     m11 = Column(JSON)
     m12 = Column(JSON)
+    m13 = Column(JSON)

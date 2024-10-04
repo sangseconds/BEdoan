@@ -7,11 +7,20 @@ def get_traffic(db: Session, id: int):
 def get_log(db: Session, id: int):
     return db.query(models.Log).filter(models.Log.id == id).first()
 
+# def get_traffics(db: Session, limit: int = 10, offset: int = 0):
+#     return db.query(models.Traffic).offset(offset).limit(limit).all()
 def get_traffics(db: Session, limit: int = 10, offset: int = 0):
-    return db.query(models.Traffic).offset(offset).limit(limit).all()
+    results = db.query(models.Traffic.id, models.Traffic.filename).offset(offset).limit(limit).all()
+    return [{"id": r[0], "filename": r[1]} for r in results]
 
+
+# def get_logs(db: Session, limit: int = 10, offset: int = 0):
+#     return db.query(models.Log).offset(offset).limit(limit).all()          
 def get_logs(db: Session, limit: int = 10, offset: int = 0):
-    return db.query(models.Log).offset(offset).limit(limit).all()          
+    results = db.query(models.Log.id, models.Log.filename).offset(offset).limit(limit).all()
+    return [{"id": r[0], "filename": r[1]} for r in results]
+
+
 
 #Traffic
 
@@ -85,6 +94,7 @@ def create_log(db: Session, log_data: dict, file_path: str, file_name: str, type
         m10=log_data[9] if len(log_data) > 9 else None,
         m11=log_data[10] if len(log_data) > 10 else None,
         m12=log_data[11] if len(log_data) > 11 else None,
+        m13=log_data[12] if len(log_data) > 12 else None,
         
     )
     db.add(db_log)

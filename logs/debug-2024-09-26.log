@@ -1,0 +1,176 @@
+2024-09-26 07:39:44 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/Accesstraffic.pcap_part1.pcap
+2024-09-26 07:39:44 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 07:39:44 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Invalid [0,60,60) range.
+JMemory: JMemory@727020568960class org.jnetpcap.protocol.network.Ip4: size=40 bytes
+JMemory: owner=nio.JMemoryPool$Block.class(size=32768/offset=13184)
+********************************************************************************
+0000:*ff ff ff ff  ff ff fa 16  3e a8 c3 5e  08 06 00 01    ........>..^....
+0010: 08 00 06 04  00 01 fa 16  3e a8 c3 5e  0a 8f 00 01    ........>..^....
+0020: 00 00 00 00  00 00 0a 8f  02 04                       ..........      
+
+
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1768 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1768 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1769 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1769 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1775 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1775 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1776 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1776 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1778 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1778 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1779 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1779 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1780 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1780 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1780 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1785 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1784 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1786 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1787 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1787 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1790 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1790 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1789 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1790 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1790 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1790 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1792 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1793 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1794 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1795 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1796 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1797 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1798 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1799 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1800 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1801 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1802 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1803 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1804 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1805 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1806 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1807 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1808 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1809 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1810 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1811 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1812 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1813 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1814 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1815 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1816 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1817 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1818 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1819 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1820 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1821 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1822 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1823 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1824 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1825 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1826 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1827 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 1828 flow
+2024-09-26 07:39:44 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/Accesstraffic.pcap_part1.pcap
+2024-09-26 07:44:30 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/DNSinetfirewall.pcap_part2.pcap
+2024-09-26 07:44:30 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 07:44:31 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 07:44:31 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/DNSinetfirewall.pcap_part2.pcap
+2024-09-26 07:55:27 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/DNSinetfirewall.pcap_part4.pcap
+2024-09-26 07:55:27 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 07:55:27 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 07:55:28 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/DNSinetfirewall.pcap_part4.pcap
+2024-09-26 08:13:46 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap
+2024-09-26 08:13:46 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 08:13:46 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 6 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 12 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 21 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 20 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 23 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:13:47 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap
+2024-09-26 08:33:16 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap
+2024-09-26 08:33:16 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 08:33:17 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 6 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 12 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 21 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 20 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 23 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:33:17 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap
+2024-09-26 08:47:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap
+2024-09-26 08:47:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-26 08:47:41 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 6 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 12 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 15 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 21 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 20 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 22 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 23 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 25 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 24 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 26 flow
+2024-09-26 08:47:42 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/DNSinetfirewall.pcap_part1.pcap

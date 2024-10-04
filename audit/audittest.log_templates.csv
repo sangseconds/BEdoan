@@ -1,0 +1,6 @@
+EventId,EventTemplate,Occurrences
+d5100b13,<*> uid=0 auid=4294967295 ses=4294967295 <*> <*> <*> hostname=? addr=? <*> res=success',140
+b7f8f4ff,<*> uid=0 old-auid=4294967295 auid=0 tty=(none) old-ses=4294967295 <*> res=1,93
+97f26892,"<*> uid=0 <*> <*> <*> acct=""root"" exe=""/usr/sbin/cron"" hostname=? addr=? terminal=cron res=success'",462
+52288206,"pid=27950 uid=33 auid=4294967295 ses=4294967295 <*> acct=""jhall"" exe=""/bin/su"" hostname=? addr=? terminal=/dev/pts/1 res=success'",8
+08b2e0f8,"pid=27966 uid=1002 auid=4294967295 ses=4294967295 msg='cwd=""/var/www/intranet.smith.russellmitchell.com/wp-content/uploads/2022/01"" cmd=636174202F6574632F736861646F77 terminal=pts/1 res=success'",2

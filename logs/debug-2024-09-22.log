@@ -1,0 +1,75 @@
+2024-09-22 04:45:41 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/test6.pcap
+2024-09-22 04:45:41 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-22 04:45:42 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 3 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 10 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 10 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 20 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 19 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 38 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 37 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 36 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 35 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 41 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 41 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 40 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 41 flow
+2024-09-22 04:45:42 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/test6.pcap
+2024-09-22 04:50:37 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/Auditintranetserver.pcap
+2024-09-22 04:50:37 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-22 04:50:37 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 00 00  00 02 fa 16  3e 46 ce 20* 86 dd 60 0d    33......>F. ..`.
+0010: 0d 59 00 10  3a ff fe 80  00 00 00 00  00 00 f8 16    .Y..:...........
+0020: 3e ff fe 46  ce 20 ff 02  00 00 00 00  00 00 00 00    >..F. ..........
+0030: 00 00 00 00  00 02 85 00  72 32 00 00  00 00 01 01    ........r2......
+0040: fa 16 3e 46  ce 20*                                   ..>F.           
+
+
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 00 00  00 02 6a 19  40 31 c6 0a* 86 dd 60 00    33....j.@1....`.
+0010: 00 00 00 10  3a ff fe 80  00 00 00 00  00 00 68 19    ....:.........h.
+0020: 40 ff fe 31  c6 0a ff 02  00 00 00 00  00 00 00 00    @..1............
+0030: 00 00 00 00  00 02 85 00  9e 83 00 00  00 00 01 01    ................
+0040: 6a 19 40 31  c6 0a*                                   j.@1..          
+
+
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 4 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 4 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 7 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 7 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 00 00  00 02 fa 16  3e 14 ac 4e* 86 dd 60 04    33......>..N..`.
+0010: db e7 00 10  3a ff fe 80  00 00 00 00  00 00 f8 16    ....:...........
+0020: 3e ff fe 14  ac 4e ff 02  00 00 00 00  00 00 00 00    >....N..........
+0030: 00 00 00 00  00 02 85 00  b6 3a 00 00  00 00 01 01    .........:......
+0040: fa 16 3e 14  ac 4e*                                   ..>..N          
+
+
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 8 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 8 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 9 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 10 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    null
+********************************************************************************
+0000:*33 33 00 00  00 02 fa 16  3e 75 ba 2b* 86 dd 60 09    33......>u.+..`.
+0010: 62 e2 00 10  3a ff fe 80  00 00 00 00  00 00 f8 16    b...:...........
+0020: 3e ff fe 75  ba 2b ff 02  00 00 00 00  00 00 00 00    >..u.+..........
+0030: 00 00 00 00  00 02 85 00  99 be 00 00  00 00 01 01    ................
+0040: fa 16 3e 75  ba 2b*                                   ..>u.+          
+
+
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 17 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 18 flow
+2024-09-22 04:50:38 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/Auditintranetserver.pcap

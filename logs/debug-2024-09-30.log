@@ -1,0 +1,13 @@
+2024-09-30 15:22:44 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/smtp-creditcards.pcap
+2024-09-30 15:22:44 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-30 15:22:45 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-30 15:22:45 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2024-09-30 15:22:45 DEBUG cic.cs.unb.ca.jnetpcap.FlowGenerator    FlagFIN current has 2 flow
+2024-09-30 15:22:45 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/smtp-creditcards.pcap
+2024-09-30 15:24:38 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/email-troubles.pcap
+2024-09-30 15:24:38 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-30 15:24:38 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-30 15:26:04 INFO  cic.cs.unb.ca.ifm.Cmd    You select: /home/vothuonghd1998/database/email-troubles.pcap
+2024-09-30 15:26:04 INFO  cic.cs.unb.ca.ifm.Cmd    Out folder: /home/vothuonghd1998/database/
+2024-09-30 15:26:04 INFO  cic.cs.unb.ca.ifm.Cmd    CICFlowMeter received 1 pcap file
+2024-09-30 15:26:04 DEBUG cic.cs.unb.ca.jnetpcap.PacketReader    Read All packets on /home/vothuonghd1998/database/email-troubles.pcap

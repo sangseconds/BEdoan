@@ -7,7 +7,7 @@ DATABASE_URL = sa.engine.URL.create(
     drivername="mysql+pymysql",
     username="root",
     password="1",
-    host="34.28.18.68",
+    host="34.170.214.142",
     port="3306",
     database="dbforensic",
 )

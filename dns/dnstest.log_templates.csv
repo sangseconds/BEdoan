@@ -1,0 +1,8 @@
+EventId,EventTemplate,Occurrences
+006ad4fc,query[PTR] <*>.in-addr.arpa from <*>,59
+bef4b736,forwarded <*> to <*>,323
+b0a0058c,nameserver <*> refused to do a recursive query,90
+a1c209ec,reply <*> is <*>,385
+2604aa46,cached <*> is <*>,59
+40f8343b,query[A] <*> from <*>,188
+1c20f0f3,query[AAAA] <*> from <*>,116

@@ -1,0 +1,6 @@
+2024-10-03 02:09:39 Event 0 (/model/model/combined/combined/user_agent): Indicator of a change in system behaviour: 0.033920916831026986. Paths to the corresponding variables: ['/model/model/fm/request/request', '/model/model/fm/request']
+VariableTypeDetector: "dns_VTD" (1 lines)
+  /model/model/fm/request/request
+  /model/model/fm/request
+172.19.131.174 - - [21/Jan/2022:08:59:29 +0000] "GET /wp-includes/js/wp-embed.min.js?ver=5.8.3 HTTP/1.1" 200 1120 "https://intranet.smith.russellmitchell.com/?p=5" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/97.0.4692.71 Safari/537.36"
+
