@@ -9,14 +9,14 @@ def get_log(db: Session, id: int):
 
 # def get_traffics(db: Session, limit: int = 10, offset: int = 0):
 #     return db.query(models.Traffic).offset(offset).limit(limit).all()
-def get_traffics(db: Session, limit: int = 10, offset: int = 0):
+def get_traffics(db: Session, limit: int = 20, offset: int = 0):
     results = db.query(models.Traffic.id, models.Traffic.filename).offset(offset).limit(limit).all()
     return [{"id": r[0], "filename": r[1]} for r in results]
 
 
 # def get_logs(db: Session, limit: int = 10, offset: int = 0):
 #     return db.query(models.Log).offset(offset).limit(limit).all()          
-def get_logs(db: Session, limit: int = 10, offset: int = 0):
+def get_logs(db: Session, limit: int = 20, offset: int = 0):
     results = db.query(models.Log.id, models.Log.filename).offset(offset).limit(limit).all()
     return [{"id": r[0], "filename": r[1]} for r in results]
 

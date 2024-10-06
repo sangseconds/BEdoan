@@ -1,0 +1,9 @@
+EventId,EventTemplate,Occurrences
+1c20f0f3,query[AAAA] <*> from <*>,19
+2604aa46,cached <*> is <*>,19
+006ad4fc,query[PTR] <*>.in-addr.arpa from <*>,5
+bef4b736,forwarded <*> to <*>,50
+b0a0058c,nameserver <*> refused to do a recursive query,5
+a1c209ec,reply <*> is <*>,65
+40f8343b,query[A] <*> from <*>,39
+614e0e47,query[TXT] current.cvd.clamav.net from <*>,2

@@ -570,29 +570,139 @@ def generate_network_graph(df):
     # Tạo danh sách netgraph, loại bỏ các kết nối có nhãn 'Normaly' và liên quan tới các IP public
     netgraph = [{"source": row['Source IP'], "target": row['Destination IP'], "label": row['Label']} 
                 for _, row in ip_pairs.iterrows() 
-                if not ((row['Label'] == 'Normal' and (identify_server(row['Source IP']) != 'Unknown Server' or identify_server(row['Destination IP']) != 'Unknown Server'))
-                        and ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) != 'Unknown Server' and is_public_ip(row['Destination IP']) != 'Unknown Server'))))]
+                if not ((row['Label'] == 'Normal' and (identify_server(row['Source IP']) != 'Unknown Server' and identify_server(row['Destination IP']) != 'Unknown Server'))
+                        # and ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) != 'Unknown Server' and is_public_ip(row['Destination IP']) != 'Unknown Server'))))]
+                        or ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) == True and is_public_ip(row['Destination IP']) == True))))]
 
     # Tạo danh sách nettable với source, target, server, label, chỉ giữ các server hợp lệ cho cả Source và Destination
-    nettable = [{"source": row['Source IP'], 
-                 "target": row['Destination IP'],
-                 "nameserver": identify_server(row['Source IP']) if is_public_ip(row['Source IP']) 
-                 else identify_server(row['Destination IP']),
-                 "label": row['Label']} 
-                for _, row in ip_pairs.iterrows() 
-                if (is_public_ip(row['Source IP']) and not is_public_ip(row['Destination IP'] )) or
-                   (not is_public_ip(row['Source IP']) and is_public_ip(row['Destination IP']))]
+    # nettable = [{"source": row['Source IP'], 
+    #              "target": row['Destination IP'],
+    #              "nameserver": identify_server(row['Source IP']) if is_public_ip(row['Source IP']) 
+    #              else identify_server(row['Destination IP']),
+    #              "label": row['Label']} 
+    #             for _, row in ip_pairs.iterrows() 
+    #             # if (is_public_ip(row['Source IP']) and not is_public_ip(row['Destination IP'] )) or
+    #             #    (not is_public_ip(row['Source IP']) and is_public_ip(row['Destination IP']))
+    #             ]
+    # Lọc các sự kiện có Label = 'Anomaly'
+    anomaly_df = df[df['Label'] == 'Anomaly']
+    
+    # Lọc chỉ các giao thức HTTP, HTTPS, DNS, SSH
+    filtered_anomaly_df = anomaly_df[anomaly_df['Application Protocol'].isin(['HTTP', 'HTTPS', 'DNS', 'SSH'])]
+
+    # Nhóm các sự kiện theo Source IP, Destination IP, Application Protocol
+    anomaly_grouped = filtered_anomaly_df.groupby(['Source IP', 'Destination IP', 'Application Protocol']).size().reset_index(name='Event Count')
+
+    # Tạo bảng nettable
+    nettable = []
+
+    # Khởi tạo biến đếm id
+    id_counter = 1
+
+    # Lặp qua từng hàng của ip_pairs
+    for _, row in ip_pairs.iterrows():
+        source_ip = row['Source IP']
+        destination_ip = row['Destination IP']
+        
+        # Lấy các sự kiện anomaly theo cặp Source IP và Destination IP
+        anomaly_events = anomaly_grouped[(anomaly_grouped['Source IP'] == source_ip) & 
+                                        (anomaly_grouped['Destination IP'] == destination_ip)]
+        
+        # Kiểm tra xem anomaly_events có trống không
+        if not anomaly_events.empty:
+            # Tạo dictionary chứa số lượng sự kiện anomaly theo giao thức ứng dụng
+            protocol_counts = {protocol: count for protocol, count in zip(anomaly_events['Application Protocol'], anomaly_events['Event Count'])}
+        else:
+            protocol_counts = {}
+        
+        # Trích xuất các payloads và timestamp liên quan từ anomaly_df và loại bỏ những giá trị "No payload found for the flow"
+        payloads_with_timestamps = df[(df['Source IP'] == source_ip) & 
+                                    (df['Destination IP'] == destination_ip) & 
+                                    (df['Payload'] != "No payload found for the flow")][['Payload', 'Timestamp']].values.tolist()
+
+        # Chuyển đổi mỗi cặp Payload, Timestamp thành dictionary với format "content":"payload", "timestamp":"02/01...."
+        payloads_with_timestamps = [{"content": payload, "timestamp": timestamp} for payload, timestamp in payloads_with_timestamps]
+        
+        # Thống kê số lượng sự kiện anomaly của nguồn theo địa chỉ đích
+        # dest_event_counts = anomaly_df[anomaly_df['Source IP'] == source_ip]['Destination IP'].value_counts().to_dict()
+        dest_event_counts = [
+        {"IP": ip, "Count": count} 
+        for ip, count in anomaly_df[anomaly_df['Source IP'] == source_ip]['Destination IP'].value_counts().items()
+    ]
+
+        # Thống kê số lượng sự kiện anomaly của đích theo địa chỉ nguồn
+        source_event_counts = [
+        {"IP": ip, "Count": count} 
+            for ip, count in anomaly_df[anomaly_df['Destination IP'] == destination_ip]['Source IP'].value_counts().items()
+            ]
+        
+        # Thêm vào nettable với id
+        nettable.append({
+            "id": id_counter,  # Số thứ tự
+            "source": source_ip,
+            "target": destination_ip,
+            # "nameserver": identify_server(source_ip) if is_public_ip(source_ip) else identify_server(destination_ip),
+            "label": row['Label'],
+            "protocol_counts": protocol_counts,  # Số lượng sự kiện anomaly theo giao thức (HTTP, HTTPS, DNS, SSH)
+            "payloads_with_timestamps": payloads_with_timestamps,  # Danh sách các (Payload, Timestamp)
+            "dest_event_counts": dest_event_counts,  # Thống kê số lượng sự kiện anomaly theo từng đích
+            "source_event_counts": source_event_counts  # Thống kê số lượng sự kiện anomaly theo từng nguồn
+        })
+
+        # Tăng giá trị id
+        id_counter += 1
+
+    # Khởi tạo một set để lưu các địa chỉ IP (set đảm bảo không có địa chỉ IP trùng lặp)
+        ip_addresses = set()
+
+        # Lặp qua từng phần tử trong netgraph để lấy các địa chỉ IP
+        for entry in netgraph:
+            ip_addresses.add(entry['source'])
+            ip_addresses.add(entry['target'])
+
+        # Khởi tạo mảng để lưu kết quả
+        netip = []
+
+        # Lặp qua từng địa chỉ IP và đếm số lượng sự kiện bất thường dựa vào anomaly_df
+        for ip in ip_addresses:
+            # Đếm số lượng sự kiện bất thường liên quan đến địa chỉ IP (ở cả Source IP và Destination IP)
+            count = len(anomaly_df[(anomaly_df['Source IP'] == ip) | (anomaly_df['Destination IP'] == ip)])
+            
+            # Lấy danh sách các IP đã kết nối với IP hiện tại (cả IP nguồn và IP đích)
+            connected_ips = set()
+            connected_ips.update(anomaly_df[anomaly_df['Source IP'] == ip]['Destination IP'].unique())
+            connected_ips.update(anomaly_df[anomaly_df['Destination IP'] == ip]['Source IP'].unique())
+
+            # Lấy thời gian xảy ra sự kiện đầu tiên và sự kiện cuối cùng liên quan đến địa chỉ IP này
+            event_times = anomaly_df[(anomaly_df['Source IP'] == ip) | (anomaly_df['Destination IP'] == ip)]['Timestamp']
+            if not event_times.empty:
+                first_event = event_times.min()
+                last_event = event_times.max()
+            else:
+                first_event = None
+                last_event = None
+
+            # Thêm kết quả vào mảng dưới dạng dictionary với thông tin bổ sung
+            netip.append({
+                "IP": ip, 
+                "Count": count,  # Số lượng sự kiện bất thường
+                "ConnectedIPs": list(connected_ips),  # Danh sách các IP đã kết nối tới
+                "FirstEvent": first_event,  # Thời gian sự kiện đầu tiên
+                "LastEvent": last_event  # Thời gian sự kiện cuối cùng
+            })
+
 
     # Dữ liệu trả về
     result = {
         "netgraph": netgraph,
-        "nettable": nettable
+        "nettable": nettable,
+        "netip":netip
     }
+    print(f"netgraph: {netgraph}")
+    print(f"nettable: {nettable}")
+    print(f"netip: {netip}")
 
     return result
-
-
-
     
 
 # Phân tích hướng truyền dữ liệu giữa các IP và trả về DataFrame với thông tin chi tiết.

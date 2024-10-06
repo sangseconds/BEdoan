@@ -1,0 +1,9 @@
+EventId,EventTemplate,Occurrences
+aaaff090,"""-""",7
+0d15fe7f,"""WordPress/5.8.3; https://intranet.smith.russellmitchell.com""",3
+0d00f6c2,"""Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)""",6
+81719b1a,"""Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)""",4462
+f3b3155d,"""WPScan v3.8.20 (https://wpscan.com/wordpress-security-scanner)""",3186
+ea679d89,"""Apache/2.4.29 (Ubuntu) OpenSSL/1.1.1 (internal dummy connection)""",1
+6d7d56fc,"""python-requests/2.27.1""",36
+abe65ea5,"""Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/97.0.4692.71 Safari/537.36""",25

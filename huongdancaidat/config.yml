@@ -7,7 +7,7 @@ LogResourceList:
   # - file:///home/vothuonghd1998/BEdoan/file_test/testaccess1.log
   # - file:///home/vothuonghd1998/BEdoan/file_test/testdns12.log
   # - file:///home/vothuonghd1998/database/intranet.smith.russellmitchell.com-access.log.2
-  - file:///home/vothuonghd1998/BEdoan/data_train/alltest.log
+#   - file:///home/vothuonghd1998/BEdoan/data_train/alltest.log
   # - file:///home/vothuonghd1998/BEdoan/data_train/finaltestanomaly.log
   # - file:///home/vothuonghd1998/BEdoan/data_train/finaltestnormal.log
   # - file:///home/vothuonghd1998/BEdoan/data_train/alltest.log
@@ -2167,52 +2167,52 @@ Analysis:
   - type: EventTypeDetector
     id: dns_ETD
 
-  - type: VariableTypeDetector
-    id: dns_VTD
-    event_type_detector: dns_ETD
-    gof_alpha: 0.05
-    s_gof_alpha: 0.05
-    s_gof_bt_alpha: 0.05
-    d_alpha: 0.1
-    d_bt_alpha: 0.1
-    div_thres: 0.3
-    sim_thres: 0.1
-    indicator_thres: 0.4
-    num_init: 100
-    num_update: 50
-    num_update_unq: 200
-    num_s_gof_values: 50
-    num_s_gof_bt: 30
-    num_d_bt: 30
-    num_pause_discrete: 5
-    num_pause_others: 2
-    test_gof_int: True
-    num_stop_update: False
-    silence_output_without_confidence: False
-    silence_output_except_indicator: True
-    num_var_type_hist_ref: 10
-    num_update_var_type_hist_ref: 10
-    num_var_type_considered_ind: 10
-    num_stat_stop_update: 200
-    num_updates_until_var_reduction: 20
-    var_reduction_thres: 0.6
-    num_skipped_ind_for_weights: 1
-    num_ind_for_weights: 100
-    used_multinomial_test: 'Chi'
-    use_empiric_distr: True
-    used_range_test: 'MinMax'
-    range_alpha: 0.05
-    range_threshold: 1
-    range_limits_factor: 1
-    num_reinit_range: 100
-    dw_alpha: 0.05
-    output_logline: False
-    ignore_list: 
-      - "/model/RandomTime"
-    constraint_list: null
-    learn_mode: False
-    log_resource_ignore_list: null
-    suppress: False
+  # - type: VariableTypeDetector
+  #   id: dns_VTD
+  #   event_type_detector: dns_ETD
+  #   gof_alpha: 0.05
+  #   s_gof_alpha: 0.05
+  #   s_gof_bt_alpha: 0.05
+  #   d_alpha: 0.1
+  #   d_bt_alpha: 0.1
+  #   div_thres: 0.3
+  #   sim_thres: 0.1
+  #   indicator_thres: 0.4
+  #   num_init: 100
+  #   num_update: 50
+  #   num_update_unq: 200
+  #   num_s_gof_values: 50
+  #   num_s_gof_bt: 30
+  #   num_d_bt: 30
+  #   num_pause_discrete: 5
+  #   num_pause_others: 2
+  #   test_gof_int: True
+  #   num_stop_update: False
+  #   silence_output_without_confidence: False
+  #   silence_output_except_indicator: True
+  #   num_var_type_hist_ref: 10
+  #   num_update_var_type_hist_ref: 10
+  #   num_var_type_considered_ind: 10
+  #   num_stat_stop_update: 200
+  #   num_updates_until_var_reduction: 20
+  #   var_reduction_thres: 0.6
+  #   num_skipped_ind_for_weights: 1
+  #   num_ind_for_weights: 100
+  #   used_multinomial_test: 'Chi'
+  #   use_empiric_distr: True
+  #   used_range_test: 'MinMax'
+  #   range_alpha: 0.05
+  #   range_threshold: 1
+  #   range_limits_factor: 1
+  #   num_reinit_range: 100
+  #   dw_alpha: 0.05
+  #   output_logline: False
+  #   ignore_list: 
+  #     - "/model/RandomTime"
+  #   constraint_list: null
+  #   learn_mode: False
+  #   log_resource_ignore_list: null
+  #   suppress: False
 
 Input:
   timestamp_paths: [""]
