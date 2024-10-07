@@ -36,6 +36,8 @@ def process_log_files_dns(input_dir: str, log_file: str, year: int = 2022):
     )
     structured_log_df['Timestamp'] = structured_log_df['Timestamp'].dt.strftime('%Y/%m/%d %H:%M:%S')
     structured_log_df = structured_log_df.drop(columns=['Month', 'Day', 'Time'])
+    # Thêm cột 'id' với giá trị từ 1 đến số dòng của df
+    structured_log_df['id'] = range(1, len(structured_log_df) + 1)
 
 
     # Ghi lại file structured log sau khi xử lý

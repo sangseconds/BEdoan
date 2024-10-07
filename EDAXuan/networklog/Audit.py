@@ -65,7 +65,8 @@ def process_log_files_audit(input_dir = "./EDAXuan/networklog/example", log_file
     df_combined['msg'] = df_combined['msg'].str.replace("'", "")
     df_combined['res'] = df_combined['res'].str.replace("'", "")
     df_combined['acct'] = df_combined['acct'].str.replace('"', "")
-
+    # Thêm cột 'id' với giá trị từ 1 đến số dòng của df
+    df_combined['id'] = range(1, len(df_combined) + 1)
     # Save the processed data to a new CSV file
     processed_log_file = f'{output_dir}/{log_file}_processed.csv'
     # hai dòng code tiếp theo thừa

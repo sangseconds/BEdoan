@@ -30,7 +30,8 @@ def process_log_files_access(input_dir = "./EDAXuan/networklog/example", log_fil
     df["User_Agent"] = df["Content"]
     # Bỏ các cột 'l', 'u', và 'MuiGio'
     df = df.drop(columns=['l', 'u', 'MuiGio','Request','EventTemplate','ParameterList','EventId','Content'], errors='ignore')
-    
+    # Thêm cột 'id' với giá trị từ 1 đến số dòng của df
+    df['id'] = range(1, len(df) + 1)
     df.to_csv(structured_csv_path, index=False)
     # Hiển thị DataFrame sau khi thực hiện các thay đổi
     templates_log_df = pd.read_csv(f'{output_dir}/{log_file}_templates.csv')

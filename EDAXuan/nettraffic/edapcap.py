@@ -364,6 +364,8 @@ def process_csv(filepcapcsv: str,filepcap:str):
 
     # Process the CSV và thêm payload vào
     process_csv_and_add_payloads(filepcap)
+    # Thêm cột 'id' với giá trị từ 1 đến số dòng của df
+    df['id'] = range(1, len(df) + 1)
 
     # Đặt tên file CSV mới và lưu file
     # filecsvlastresult = filepcapcsv.replace('.csv', '_processed.csv')
@@ -568,11 +570,50 @@ def generate_network_graph(df):
 
     # Tạo danh sách netgraph, chỉ giữ các kết nối với Source và Destination IP không phải là 'Unknown Server'
     # Tạo danh sách netgraph, loại bỏ các kết nối có nhãn 'Normaly' và liên quan tới các IP public
-    netgraph = [{"source": row['Source IP'], "target": row['Destination IP'], "label": row['Label']} 
-                for _, row in ip_pairs.iterrows() 
-                if not ((row['Label'] == 'Normal' and (identify_server(row['Source IP']) != 'Unknown Server' and identify_server(row['Destination IP']) != 'Unknown Server'))
-                        # and ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) != 'Unknown Server' and is_public_ip(row['Destination IP']) != 'Unknown Server'))))]
-                        or ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) == True and is_public_ip(row['Destination IP']) == True))))]
+    # netgraph = [{"source": row['Source IP'], "target": row['Destination IP'], "label": row['Label']} 
+    #             for _, row in ip_pairs.iterrows() 
+    #             if not ((row['Label'] == 'Normal' and (identify_server(row['Source IP']) != 'Unknown Server' and identify_server(row['Destination IP']) != 'Unknown Server'))
+    #                     # and ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) != 'Unknown Server' and is_public_ip(row['Destination IP']) != 'Unknown Server'))))]
+    #                     or ((row['Label'] == 'Normal' and (is_public_ip(row['Source IP']) == True and is_public_ip(row['Destination IP']) == True))))]
+
+
+    # Bước 1: Tạo dictionary để nhóm các cặp IP theo source và target
+    ip_group = {}
+    for _, row in ip_pairs.iterrows():
+        source = row['Source IP']
+        target = row['Destination IP']
+        label = row['Label']
+        
+        # Chuẩn hóa thứ tự IP (sắp xếp lại để tránh trùng lặp ngược)
+        key = (min(source, target), max(source, target))
+        
+        # Bước 2: Thêm sự kiện vào nhóm
+        if key not in ip_group:
+            ip_group[key] = {'Normal': None, 'Anomaly': None}
+        
+        # Nếu sự kiện là "Anomaly", luôn ghi đè
+        if label == 'Anomaly':
+            ip_group[key]['Anomaly'] = row
+        elif label == 'Normal' and ip_group[key]['Anomaly'] is None:
+            # Chỉ lưu sự kiện "Normal" nếu chưa có sự kiện "Anomaly"
+            ip_group[key]['Normal'] = row
+
+    # Bước 3: Tạo lại netgraph từ các cặp đã lọc
+    netgraph = []
+    for key, events in ip_group.items():
+        # Nếu có sự kiện Anomaly thì dùng nó, nếu không thì dùng sự kiện Normal
+        if events['Anomaly'] is not None:
+            netgraph.append({
+                "source": events['Anomaly']['Source IP'], 
+                "target": events['Anomaly']['Destination IP'], 
+                "label": events['Anomaly']['Label']
+            })
+        elif events['Normal'] is not None:
+            netgraph.append({
+                "source": events['Normal']['Source IP'], 
+                "target": events['Normal']['Destination IP'], 
+                "label": events['Normal']['Label']
+            })
 
     # Tạo danh sách nettable với source, target, server, label, chỉ giữ các server hợp lệ cho cả Source và Destination
     # nettable = [{"source": row['Source IP'], 
@@ -699,9 +740,6 @@ def generate_network_graph(df):
         "netip":netip
     }
     print(f"netgraph: {netgraph}")
-    print(f"nettable: {nettable}")
-    print(f"netip: {netip}")
-
     return result
     
 
@@ -799,7 +837,7 @@ def plot_time_sum_column_trend(df, column, time_sign='h', start_time=None, end_t
     time_column = df.resample(time_sign, on='Timestamp')[column].sum()
     
     # Chuẩn bị dữ liệu để trả về
-    result = [{'name': ts.strftime('%Y/%m/%d' if time_sign == 'd' else '%Y/%m/%d %H'), 'pv': value} 
+    result = [{'name': ts.strftime('%Y/%m/%d %H' if time_sign == 'd' else '%Y/%m/%d %H:%M'), 'pv': value} 
               for ts, value in time_column.items()]
      # Chuyển đổi kết quả thành JSON
     json_compatible_result = jsonable_encoder(result)

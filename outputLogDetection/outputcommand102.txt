@@ -1,0 +1,2444 @@
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: query[A] 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: query[A] 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: forwarded 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: forwarded 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: reply 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:43 dnsmasq[3468]: reply 3x6-.433-.EA7bTLRHVgf*zEEuSpkYcGMUbOZ32g*0Xs-.9W2q4t1JnVDqd09xpPADjGsN8aXfLO7Q8h-.ChXwOhWz1YorX2PLpIjnybZ*YI2CR*RZZM-.XHYLsPHkc8KPZKeupuom132aPW1j5GigrH-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: query[A] 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: query[A] 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: forwarded 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: forwarded 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: reply 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:53:57 dnsmasq[3468]: reply 3x6-.434-.9owg7I1ajXeo4*WBWKfve1SRVlmJVdalWx-.s2agRO5Sr4xDAaJGWkJhzjD5BBUUt63D1k-.nHX2kl16PzLm9IrNWH19LH8*6hToaD0r1v-.2JUiqwJQqDITjM2zNIGGOwS7AfnRm9UPdD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: query[A] 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: query[A] 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: forwarded 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: forwarded 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: reply 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:18 dnsmasq[3468]: reply 3x6-.435-.hYYQANIhFWhmofg3FI2L*MNjNkknl4fQLu-.CplfgHnYXiFY0TPZdvzxP*LF2j1EpvGGXU-.c9hpus*ds*nw5ETiJJm8yErRl//NXZOV5a-.3AqC*yRDOBLPIJB*XzY8OO4IHS77rwIhSN-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: query[A] 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: query[A] 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: forwarded 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: forwarded 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: reply 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:37 dnsmasq[3468]: reply 3x6-.436-.RNYjnQ7GPx6qusG0wmisaTihfFgqEKwnyy-.Fik3kQ5Di8La7zkN9v3iJUryvHr*y4dk6G-.1wAfMV6pyEpjKaMihtz3xKl9NXlfjsTyn6-.bjtvb3t6QAP8j1eRSMwZdt/k2ieMpywoNo-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: query[A] 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: query[A] 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: forwarded 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: forwarded 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: reply 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:54:52 dnsmasq[3468]: reply 3x6-.437-.P5NAy1CCpy1r05RGJlIu9AjRcNdQ9k*zUW-.cKKZshlymQdz5IfpRkf0fkqJnJG51Whxi7-.MLbJMIZWp8gSLw1SPhxIiWbHuYuYp1GVfd-.3AiTUjc41mmxYKZmOu*6McWku0RQ/06EP/-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: query[A] 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: query[A] 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: forwarded 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: forwarded 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: reply 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:15 dnsmasq[3468]: reply 3x6-.438-.VC0eVBUNt4pGUxmkRPxpmpo9/BbpQfjyed-.eccNW0RRb34nWbL7*9Cd0642jczgPXL9dZ-.YRpKN2DXHvdDBAI0X8R*0OMvrsSPWe*b0c-.MYgfFDQX2zTg2bRA6Mwqqw44I/1ToO2pBD-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: query[A] 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: query[A] 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: forwarded 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: forwarded 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: reply 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:30 dnsmasq[3468]: reply 3x6-.439-.quARVogYKiDB1aFIAO93WoP0XXoMH4N2OE-.4DSai93Alkl73/ehoM9kVKVsdTtGAY6CJ5-.zipVlTmVq9zkOqgaWXhw3XgP*n8JRgjuox-.4Xkgz*UDsMBGq0M*ucFeBYFyX0kvxdR6re-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: query[A] 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: query[A] 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: forwarded 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: forwarded 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: reply 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:55:43 dnsmasq[3468]: reply 3x6-.440-.M6v4M9EUkiqUW0EfcRF2V8BM5A1m5pV8lR-.J8NdsQWeRxVyLXRa0zsXN/ySqf02MVietF-.vVxke0cdRJJVIRNYYx3GyN8uMf/kJrYbQ*-.gf5zgcCv77NgtOjPpTA2yd*4LCLY5czVmW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: query[A] 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: query[A] 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: forwarded 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: forwarded 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: reply 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:04 dnsmasq[3468]: reply 3x6-.441-.4yRteZalGV1y3xbqLIqBE*aGz3wMiIsN/*-.kjnOdL7TuBjsfQ4H1vl5iBwhrmAjwMDQpW-.LWNjIJUkbodH9*0zNS8XVTyelTslL/wKIA-.e/rFd3IYnC*3Vg/udqd8oSk1wFUaKEI0r2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: query[A] 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: query[A] 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: forwarded 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: forwarded 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: reply 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:27 dnsmasq[3468]: reply 3x6-.442-.e1wZvEz79KiTCIcsn0ApR7a5DMCX2xuJjm-.WWqdfBqqALcu16ODikN34ApY8kzh*XyU76-.fDeIGZLBjDKbIySpwcrka1qSoYpS1DWGyZ-.t3lq1uxbY0a65dOIWhuosnX*8va7/sFtyC-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: query[A] 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: query[A] 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: forwarded 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: forwarded 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: reply 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:56:44 dnsmasq[3468]: reply 3x6-.443-.DID*yeTa6W3TxghadP8hl/ky5*fFc0XnYO-.4EF6DwC63toGqnN4Eu513wNGp6BsZlFdEq-.9wwdJs0Cx0EGxIiKbt40FfuHH0kJCThGUd-.OqS1aITfBkFVx6OhTrAp7pf1X59ffi5dVj-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': 'gateway.smith.russellmitchell.com'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'gateway.smith.russellmitchell.com', b'192.168.230.4')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.2.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'254.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'254.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'164.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'103.0.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'103.0.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'106.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'56.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'68.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'174.131.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': 'share.intranet.smith.russellmitchell.com'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'share.intranet.smith.russellmitchell.com', b'10.143.0.103')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': 'gateway.smith.russellmitchell.com'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'gateway.smith.russellmitchell.com', b'192.168.230.4')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.2.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'103.0.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'103.0.143.10.in-addr.arpa')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': 'share.intranet.smith.russellmitchell.com'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'share.intranet.smith.russellmitchell.com', b'10.143.0.103')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'68.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'106.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'4.130.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'174.131.19.172.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'254.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD5" (1 lines)
+  (b'dns.russellmitchell.com', b'192.168.231.254')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'164.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'56.231.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'122.230.168.192.in-addr.arpa')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: query[A] 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: query[A] 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: forwarded 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: forwarded 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: reply 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:06 dnsmasq[3468]: reply 3x6-.444-.Yy06n9bQUjN3K9W7/ujUucvF7LAx3DEg*S-.Vy7ZJur3KZuuy1VKZA1zGp44cmSfnsTB27-.f6AYoQ8TDhNyNIHKlw5EzF3vxGZTN5uSHc-.jQiuZg*8tppHkPskbPCCfKSMoXIac8iPz2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'NODATA-IPv6', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886959620, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (2130706433, b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '172.19.131.174'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'172.19.131.174', b'vpn.dmz.smith.russellmitchell.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: query[A] 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: query[A] 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: forwarded 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: forwarded 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: reply 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:28 dnsmasq[3468]: reply 3x6-.445-.iDR71XK9F1R57vvzg*G1WIHCsK4qYyakpm-.CiAiKnPaeQkj51dgDqkTj9oRUL/wSaZ/wJ-.FoLGTZWAp7yB1twcb3LSOi09P8HMZ29V7b-.l8F4XwZN2jZ54JokPqjc5jgZLMU56rRFsF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: query[A] 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: query[A] 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: forwarded 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: forwarded 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: reply 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:57:45 dnsmasq[3468]: reply 3x6-.446-.pcgtHxji2L4DJ1a2Skoe45sKSRaAx5SXc7-.UHzUNOkb6ZnT6pCYBx*S0vUOuoSewVx6y2-.N8k*mL4UxvZe*Waah2eWOaS*k4LsO2DbOP-.ZwOAZo106d/xHVkl7fAT94IncgkcVbo7ik-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'data.wpscan.org')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'data.wpscan.org')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (2886960046, b'data.wpscan.org')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'data.wpscan.org')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: query[A] 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: query[A] 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: forwarded 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: forwarded 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: reply 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:06 dnsmasq[3468]: reply 3x6-.447-.J7i7*5L14GBvcbCJTjiP9mbCgLI4np7fwo-.7GB4fyW/EQaUuSqLNqPDM9hKsRz8G8j1W0-.lxaqIubjb/jXDTz1xm1XWDO6HvZP7LFMzv-.BCF4*cF7TrhGKPR3DfOFgVi3x9AMGOSRDs-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: query[A] 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: query[A] 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: forwarded 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: forwarded 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: reply 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:21 dnsmasq[3468]: reply 3x6-.448-.vyxiZ3eQ2ehTQYrtLV195JUjkNmscGQW3E-.W/Ci4zHYqzEc/W3M8sBVSVYUDJEhqW6tSY-.USPjDRFrdjrSzZE1luj*wzHZd*Ih9RuQh3-.7Yeu6eb41YYa2QXJ32d1xHNlfirx6BziS4-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: query[A] 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: query[A] 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: forwarded 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: forwarded 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: reply 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:35 dnsmasq[3468]: reply 3x6-.449-.wZRFcOfQFooYTSUHwbqhOj6xOsWErGiKVj-.Q9G6KWuX9AjS*OOb0iKj12W/sffgSp/VAu-.uwQCru3VwuxYXXnt50*VdHJgdlWcwC2YTw-.JBcGD0BKHiTvbw2Dy7pFHEpB7otJhWMhkb-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: query[A] 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: query[A] 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: forwarded 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: forwarded 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: reply 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:58:51 dnsmasq[3468]: reply 3x6-.450-.org5R8TkRd8ce41/xZrt44DhGUTS5acEaU-.Nxzye5skPizp0pqt1RPY*Jv8JIOHrcmrv3-.zxoFvqiHmkPpEZ52y/hfZQr4Xm0mpWV*rq-.ZQqOPnKBWYmT6q5XsmJX9GqkJi0wn5M0BI-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: query[A] 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: query[A] 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: forwarded 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: forwarded 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: reply 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:10 dnsmasq[3468]: reply 3x6-.451-.4lz8qMHyFcj9ZTTK/wRBwyxAF8vOU4*hHz-.LffXOuDVwtZUnkdf4VQJSiPom7SfzC3HWb-.4pu3yzmL5ReuErobAqn/uunhDVPH*qRmw*-.TDqTI2K/kzXhWS/I*xJtVA4nvOYhF5Fds2-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177144324, b'github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177144324, b'github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: query[A] 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: query[A] 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: forwarded 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: forwarded 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: reply 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:22 dnsmasq[3468]: reply 3x6-.452-.Zo5DLpP/d8t3QKp9qeHlVAGic5iui67yih-.Z2DC8sEhoy6ISIXTtrwUJOoFjmk5VOEab8-.RI/aJVxduueLifGOpzhpnfcyoTKyIETCN2-.GAiAENU3qXWrp6TkVL8l*8GzNp0thoh96P-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177144324, b'codeload.github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'codeload.github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177144324, b'codeload.github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'codeload.github.com')
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: query[A] 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: query[A] 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: forwarded 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: forwarded 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: reply 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:38 dnsmasq[3468]: reply 3x6-.453-.hkGx5L/jRwMe3k8TuHxLq9206dY4pGX94Z-.9*tDF6GLPFd3pAx3x9Zq93RRAnHZdLIseL-.eRzdrN0zMQiM/cQTfLq8mdOvBx*8VPsSnb-.DglVrTtXNyUqJFmVD60Mumj7UkASlA7MgX-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: query[A] 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: query[A] 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: forwarded 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: forwarded 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: reply 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 03:59:57 dnsmasq[3468]: reply 3x6-.454-.Dfn8SnqpuUalDarEow8*uBl*kiT6FN1inY-.1hFSdgvbQUBOzddSSfYVpnJ3zQSjxx4KzV-.GpnuyJNHi6Iwa09zvRFizXK0TmBXP0pj07-.g50sg1mACh8u5rBpaMAhWoU/GBr/Nlk7jS-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: query[A] 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: query[A] 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: forwarded 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: forwarded 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: reply 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:12 dnsmasq[3468]: reply 3x6-.455-.4UZ3YLu2qRNz531DvCT9Oio2vY7ctkQHcs-.mU73gZFyuWDd9ujxNSLQYHldA*RyCtux9D-.znBwSUNdSZQ7Sio/UUo9rscZli*tYh*Ggd-.VOPitdVNm3ZqmbU/brpt4CcwMAlMc0J0UU-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: query[A] 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: query[A] 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: forwarded 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: forwarded 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: reply 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:32 dnsmasq[3468]: reply 3x6-.456-.ME5wiLe7kqDNCvhzyonaPVODwMRPPPn/uI-.7nohBtX2zm2d8e7xyxvUNK0zaZ1SNCv8zj-.J3jPs*LSRzmH7AmMWsB*Rb8r5TceDmN8oL-.8rEyVJDxF6pq//wyGiwg6kGrovJsw7HsnF-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: query[A] 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: query[A] 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: forwarded 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: forwarded 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: reply 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:44 dnsmasq[3468]: reply 3x6-.457-.in8d8gX6w1*osvVXb/u2rtAegxavZKcIV4-.JzMseGL0WqSsvOzWtXq9s6VodO4bZtMQgg-.Jr0kpsbSO8/uGiEPD8N5TO31z4lfkQQQAt-.amoEQLI3a1AIxkpX4nYcdgA/GBHijEdw72-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: query[A] 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: query[A] 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: forwarded 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: forwarded 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: reply 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:00:56 dnsmasq[3468]: reply 3x6-.458-.iw3UIppCgJrDF51*ujJcG0RlQ5TkwttwDU-.PK9Z4pYbXBRCfqka3IMBYQAy2nghwzR7SM-.rY38*Tj1tyylBeF8kWcG*G*wOITFcRJ7Jj-./J0QeXTpmVjRkdnbeg/iMsJGTh4AYDs4me-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: query[A] 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: query[A] 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: forwarded 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: forwarded 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: reply 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:08 dnsmasq[3468]: reply 3x6-.459-.EIZ3jpaLQFq9d1d4TPyJ2K5ZNnOS7PHN1R-.OqYcZ5rA03x4Z4vmfnzIMjKyQMbboNYR4p-.WLJFkqFs31jdzZiRoJzRx4ebX9fv8ep/k4-.nYpAKgIn71D8hjA0vsg5YXnHvH03wQTZ5s-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: query[A] 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: query[A] 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: forwarded 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: forwarded 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: reply 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:26 dnsmasq[3468]: reply 3x6-.460-.ota*K9HM8qxr7qaYRLFAQ7Qt*fpd4hl9U/-.p/xO5ZuOCYThMBFkNZHflj3aTOS9xEeb9O-.QmR1B*5gghqYYi/2Cs*YAFEN9Oksv4Qnau-.9MDAb**bfQU0B2sNWCWepWqULIKcIq7Eht-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: query[A] 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: query[A] 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: forwarded 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: forwarded 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: reply 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:01:46 dnsmasq[3468]: reply 3x6-.461-.SPlkzfsjffCY00PDp31Ov3/zfXchnhlb7o-.u8n6zEFJ*0duCRVC7jt3E5goGH8gXbyRlk-.QZKN9YxV2/LAbB5cGjii4ZON/*t9*QzhMn-.axPYhWN964oz8wzZ6zvlwDYnZY4XrvoDcW-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: query[A] 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: query[A] 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: forwarded 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: forwarded 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: reply 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:01 dnsmasq[3468]: reply 3x6-.462-.Dy5wCRKGPQeqovXiFwDqM1MG6OfJ9aN1b5-.qq8NwqFKE2RK6gVlKidqinB/Rs36cTkAes-.vnjra6UrSzgAiCYE4v1E*qpBwR2VeP/Blq-.ZPYtbFseUGMr5UkUQp3vTyrcXXOjToaG63-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: query[A] 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: query[A] 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: forwarded 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: forwarded 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: reply 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:25 dnsmasq[3468]: reply 3x6-.463-.I60HUunnQPEeJRAAEPG3nUHA*QX9axjAel-.r5TZHovKk5L2PRk6jFtrNXLT*PWX6mZJew-.JRSi7mx4vLdsMXg4yEjEmsmf7utBXzc21R-.khMHUIUZXzCkSqylr5Bok6MGqYopvEWa0j-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: query[A] 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: query[A] 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: forwarded 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: forwarded 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: reply 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:40 dnsmasq[3468]: reply 3x6-.464-.UzGHK5mUlk2noTRkZivFKJ*rLInCoM507F-.Kn1ZFqzzieX6vpiH1MZPKP/yM12JF/A7WL-.DxQDUocWcd/9YXNOr9pW5hvzy01BkM3S*Y-.KePPhTe6whL7wUHovxyqJyY6K*N3KhszQK-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD2" (1 lines)
+  (177143911, b'3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: query[A] 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: query[A] 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info from 10.143.0.103
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD3" (1 lines)
+  (3232294910, b'3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: forwarded 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: forwarded 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info to 192.168.231.254
+
+2024-10-06 08:18:42 New value(s) detected
+NewMatchPathValueDetector: "dns_NMPVD" (1 lines)
+  {'/model/model/type/reply/ip': '195.128.194.168'}
+
+2024-10-06 08:18:42 New value combination(s) detected
+NewMatchPathValueComboDetector: "dns_NMPVCD4" (1 lines)
+  (b'195.128.194.168', b'3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info')
+
+2024-10-06 08:18:42 New character(s) detected
+CharsetDetector: "dns_CD" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: reply 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
+2024-10-06 08:18:42 Value entropy anomaly detected
+EntropyDetector: "dns_ED" (1 lines)
+  Jan 24 04:02:52 dnsmasq[3468]: reply 3x6-.465-.WApbsXG5gA96vPDJoaVj05bizSRqbvQRbD-.Yk15FrEmauU8sMkx2DJTQ4UAqQCZgKcmiX-.3Rf9zsfCtZzxuIOgPBDHXEdyZ7MQt5zEmE-.1LzmNRAZiYS6Q8cm*MC*o2W4AsZ1Qlq1YG-.payroll_2019.xlsx.email-19.kennedy-mendoza.info is 195.128.194.168
+
